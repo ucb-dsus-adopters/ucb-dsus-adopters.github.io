@@ -1,0 +1,1754 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The central home for adopting UC Berkeley Data Science courses: standardized setup, Canvas import, and Otter autograding instructions for adopters.">
+      
+      
+      
+        <link rel="canonical" href="https://ucb-dsus-adopters.github.io/courses/data6/">
+      
+      
+        <link rel="prev" href="../data8/">
+      
+      
+        <link rel="next" href="../data9/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Data 6 - UC Berkeley Data Science Course Adoption</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+3:300,300i,400,400i,700,700i%7CSource+Code+Pro:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Source Sans 3";--md-code-font:"Source Code Pro"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#data-6-computational-thinking-with-data-science-and-society" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="UC Berkeley Data Science Course Adoption" class="md-header__button md-logo" aria-label="UC Berkeley Data Science Course Adoption" data-md-component="logo">
+      
+  <img src="../../assets/dsus_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            UC Berkeley Data Science Course Adoption
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Data 6
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ucb-dsus-adopters/ucb-dsus-adopters.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ucb-dsus-adopters
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../how-to-adopt/" class="md-tabs__link">
+          
+  
+  
+  How to Adopt
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Courses
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../resources/faq/" class="md-tabs__link">
+          
+  
+  
+  Resources
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../contact/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Contact
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="UC Berkeley Data Science Course Adoption" class="md-nav__button md-logo" aria-label="UC Berkeley Data Science Course Adoption" data-md-component="logo">
+      
+  <img src="../../assets/dsus_logo.png" alt="logo">
+
+    </a>
+    UC Berkeley Data Science Course Adoption
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ucb-dsus-adopters/ucb-dsus-adopters.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ucb-dsus-adopters
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How to Adopt
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    How to Adopt
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-adopt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-adopt/infrastructure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Infrastructure & Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-adopt/canvas-import/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Canvas Import
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-adopt/autograding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Otter Autograding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-adopt/adapting-content/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adapting Content
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-adopt/licenses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Understanding Licenses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-adopt/support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Support
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Courses
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Courses
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data 6
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-get-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Get access
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-set-up-canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Set up Canvas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Set up Canvas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#point-assignments-at-your-jupyterhub" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Point assignments at your JupyterHub
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import-into-canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Import into Canvas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-student-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Student workflow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-grade-with-otter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Grade with Otter
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Grade with Otter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instructor-grading-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instructor grading checklist
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#course-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Course notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explore-the-materials-in-your-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Explore the materials in your browser
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        License
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acknowledgments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acknowledgments
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#need-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Need help?
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data 9
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data100/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data 100
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Resources
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-get-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Get access
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-set-up-canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Set up Canvas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Set up Canvas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#point-assignments-at-your-jupyterhub" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Point assignments at your JupyterHub
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import-into-canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Import into Canvas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-student-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Student workflow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-grade-with-otter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Grade with Otter
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Grade with Otter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instructor-grading-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Instructor grading checklist
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#course-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Course notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explore-the-materials-in-your-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Explore the materials in your browser
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        License
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acknowledgments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acknowledgments
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#need-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Need help?
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<div class="course-hero course-hero--data6">
+<p><img alt="Data 6" class="hero-logo" src="../../assets/data6_logo.png" /></p>
+<h1 id="data-6-computational-thinking-with-data-science-and-society">Data 6: Computational Thinking with Data Science and Society<a class="headerlink" href="#data-6-computational-thinking-with-data-science-and-society" title="Permanent link">&para;</a></h1>
+</div>
+<p>Data 6, "Introduction to Computational Thinking with Data Science and Society," is an
+introductory, interdisciplinary course taught at UC Berkeley. It combines statistics,
+computer science, and social science to give students a practical introduction to
+computational thinking and exploratory data analysis. The full set of materials is
+available to adopt.</p>
+<ul>
+<li>Course notes: <a href="https://data6.org/notes/">data6.org/notes</a></li>
+<li>Public student materials: <a href="https://github.com/dubois-ctds/data-6-materials-student">dubois-ctds/data-6-materials-student</a></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Quick start</p>
+<ol>
+<li>Complete the <a href="https://forms.gle/2nNtbfgBtNsUHypCA">Data 6 Instructor Interest Form</a></li>
+<li>Fork the <a href="https://github.com/dubois-ctds/data-6-materials-student">student materials</a></li>
+<li>Follow the steps below</li>
+</ol>
+</div>
+<h2 id="1-get-access">1. Get access<a class="headerlink" href="#1-get-access" title="Permanent link">&para;</a></h2>
+<p>Create a GitHub account if needed, then complete the
+<a href="https://forms.gle/2nNtbfgBtNsUHypCA">Instructor Interest Form</a> (expect a response within ~24 hours).
+Fork the student materials at <a href="https://github.com/dubois-ctds/data-6-materials-student">dubois-ctds/data-6-materials-student</a>, and
+accept the invitations to the private solutions repository
+(<a href="https://github.com/dubois-ctds/data-6-materials-solutions">dubois-ctds/data-6-materials-solutions</a>) and the
+<a href="https://github.com/orgs/otter-service-stdalone">Otter Service Standalone org</a>.</p>
+<p><strong>Screen recording: forking the student materials</strong></p>
+<!-- Shared block: walkthrough video for forking the student materials. -->
+<div class="video-wrapper">
+<iframe src="https://www.youtube.com/embed/UV6SxzSldfU" title="Forking the student materials" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<h2 id="2-set-up-canvas">2. Set up Canvas<a class="headerlink" href="#2-set-up-canvas" title="Permanent link">&para;</a></h2>
+<p>Download the <a href="https://drive.google.com/file/d/1ioxchiwz1PPDJk6A5X-HVJeIR0n4rMRl/view?usp=sharing">Data 6 Canvas template</a>.</p>
+<h3 id="point-assignments-at-your-jupyterhub">Point assignments at your JupyterHub<a class="headerlink" href="#point-assignments-at-your-jupyterhub" title="Permanent link">&para;</a></h3>
+<!-- Shared block: point Canvas assignment links at the adopter's JupyterHub.
+     Host page selects a course into `c` (e.g. c = courses.data8) before including. -->
+<p>The default template links assignment URLs to <code>datahub.berkeley.edu</code>. If your
+institution uses a different JupyterHub, use the
+<a href="https://ds-modules.github.io/canvas-jupyterhub-rewriter/">Canvas JupyterHub rewriter</a> to update the zip or <code>.imscc</code>
+file <strong>before</strong> importing:</p>
+<ul>
+<li>Upload your Canvas template (zip or <code>.imscc</code> file) to the rewriter</li>
+<li>Enter your JupyterHub URL (e.g., <code>datahub.berkeley.edu/hub</code> or your institution's hub URL)</li>
+<li>Enter the materials repository URL: for Data 6, use <code>https://github.com/dubois-ctds/data-6-materials-student</code></li>
+<li>Scan and preview to see how links will change</li>
+<li>Confirm that old links are being rewritten to your hub and that the repo points to
+  <code>dubois-ctds/data-6-materials-student</code></li>
+<li>Rewrite and download the updated file</li>
+</ul>
+<div class="video-wrapper">
+<iframe src="https://www.youtube.com/embed/xbvQF5HmwUw" title="JupyterHub rewriter walkthrough" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<h3 id="import-into-canvas">Import into Canvas<a class="headerlink" href="#import-into-canvas" title="Permanent link">&para;</a></h3>
+<!-- Shared block: import the common cartridge into Canvas.
+     Host page selects a course into `c` (e.g. c = courses.data8) before including. -->
+<p>We recommend importing the cartridge into a <strong>new</strong> Canvas course. After the first
+import, <strong>copy that course inside Canvas</strong> from term to term instead of re-importing
+the cartridge into an existing shell (re-importing can duplicate items that do not
+share the same internal IDs).</p>
+<ul>
+<li>Create a new course: Settings → Start a new course, name it (e.g., "Data 6")</li>
+<li>Go to <strong>Import Course Content</strong> from the course menu</li>
+<li>Select <strong>Common cartridge 1.x package</strong> as the content type</li>
+<li>Upload the <code>.imscc</code> file (the rewritten file from the rewriter step, or the original
+  template if using <code>datahub.berkeley.edu</code>)</li>
+<li>Upload <strong>all</strong> content for this initial import</li>
+<li>Wait for the import: Status will show "queued" then "running" with a progress bar</li>
+<li><strong>Verify the links.</strong> After import, click on an assignment (e.g., Homework 1) and
+  check the link in the bottom-left corner of your browser. It should show your
+  JupyterHub URL. Click through to confirm the notebook loads correctly</li>
+</ul>
+<div class="video-wrapper">
+<iframe src="https://www.youtube.com/embed/tsi-z_cf8Pc" title="Uploading the Canvas template" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="admonition note">
+<p class="admonition-title">What's in the Canvas shell</p>
+<p>The Canvas shell includes:</p>
+<ul>
+<li>Reading assignments embedded as quizzes (ensures student engagement)</li>
+<li>Week-by-week course structure</li>
+<li>Pre-configured assignment links</li>
+<li>Gradebook setup</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Other LMS platforms</p>
+<p>If you're not using Canvas, the core notebooks are platform-independent and can be
+linked from any LMS.</p>
+</div>
+<h2 id="3-student-workflow">3. Student workflow<a class="headerlink" href="#3-student-workflow" title="Permanent link">&para;</a></h2>
+<!-- Shared block: how students interact with assignments. Identical across courses. -->
+<p>Here is how students will interact with assignments:</p>
+<ol>
+<li><strong>Access:</strong> Students log into Canvas and click on an assignment link</li>
+<li><strong>Open notebook:</strong> The notebook opens in JupyterHub (in a new tab)</li>
+<li><strong>Work:</strong> Students complete the notebook, checking answers as they go</li>
+<li><strong>Export:</strong> Students use the "export" cell at the bottom to download their completed notebook</li>
+<li><strong>Submit:</strong> Students upload the downloaded file to Canvas</li>
+</ol>
+<h2 id="4-grade-with-otter">4. Grade with Otter<a class="headerlink" href="#4-grade-with-otter" title="Permanent link">&para;</a></h2>
+<!-- Shared block: grade notebooks with Otter Service Standalone (web-based).
+     Host page selects a course into `c` (e.g. c = courses.data8) before including. -->
+<p>The Otter Service Standalone is a web-based service for grading notebooks, with no local
+installation required. The service is available at <a href="https://grader.datahub.berkeley.edu/">https://grader.datahub.berkeley.edu/</a>.</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 16.5v-9l6 4.5M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span> <a href="https://drive.google.com/file/d/1-r1kuUutn7ZXl3lSUgBbZAxLFuHoeFPp/view">Screen recording: grading walkthrough (5 min)</a></p>
+<p><strong>Step 1: Authorization.</strong> To access the service, we add your GitHub username to our
+Otter service organization. Once you have been added, accept the invitation by opening
+the <a href="https://github.com/orgs/otter-service-stdalone">otter-service-stdalone organization</a>, then log in to the
+grader with your GitHub account.</p>
+<p><strong>Step 2: Download your student submissions.</strong> Export submissions from Canvas. You can
+grade a folder of notebooks by compressing it into a zip file and uploading that, or
+grade one notebook at a time by uploading the notebook itself.</p>
+<p><strong>Step 3: Download the solution files (<code>autograder.zip</code>).</strong> In the private solutions
+repository (<a href="https://github.com/dubois-ctds/data-6-materials-solutions">dubois-ctds/data-6-materials-solutions</a>), browse to the
+<code>autograder_zips</code> folder and download the <code>autograder.zip</code> for the assignment you are
+grading. If you do not have access yet, complete the
+<a href="https://forms.gle/2nNtbfgBtNsUHypCA">Instructor Interest Form</a> or email
+<a href="mailto:ds-help@berkeley.edu">ds-help@berkeley.edu</a>.</p>
+<p><strong>Step 4: Upload and grade.</strong> In the "Grade" section, upload your <code>autograder.zip</code> and
+the student submissions, then press <strong>Grade Notebooks</strong>. A "download" code appears under
+the button. You will need it for the next step.</p>
+<p><strong>Step 5: Download your results.</strong> The system grades roughly one minute per ten
+notebooks. When it finishes, enter the code from Step 4 into the "Results" section and a
+folder with a log file and a CSV file downloads. The CSV contains the grades by
+notebook; if anything fails, check the log file first.</p>
+<div class="admonition important">
+<p class="admonition-title">Version requirement</p>
+<p>Data 6 notebooks are configured with <strong>otter-grader 6.1.6</strong>.
+If you grade locally, install exactly that version:</p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>otter-grader<span class="o">==</span><span class="m">6</span>.1.6
+</code></pre></div>
+</div>
+<h3 id="instructor-grading-checklist">Instructor grading checklist<a class="headerlink" href="#instructor-grading-checklist" title="Permanent link">&para;</a></h3>
+<!-- Shared block: instructor GitHub access + grading handoff.
+     Host page selects a course into `c` (e.g. c = courses.data8) before including. -->
+<ol>
+<li><strong>Download student submissions:</strong> Export all submissions from Canvas onto your machine.</li>
+<li><strong>Get solutions:</strong> Log into the private solutions repository
+   (<a href="https://github.com/dubois-ctds/data-6-materials-solutions">dubois-ctds/data-6-materials-solutions</a>), navigate to the
+   <code>autograder_zips</code> folder, and download the <code>autograder.zip</code> for the assignment you are
+   grading.</li>
+<li><strong>Grade automatically:</strong> Log into the grader at
+   <a href="https://grader.datahub.berkeley.edu/">https://grader.datahub.berkeley.edu/</a> with your GitHub username and grade the
+   submissions (see <a href="../../how-to-adopt/autograding/">Otter Autograding</a>).</li>
+<li><strong>Import grades:</strong> Upload the CSV file with grades back to Canvas.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Please do not distribute solutions</p>
+<p>Access to dubois-ctds/data-6-materials-solutions is granted on the condition that solutions are
+not redistributed. This protects the integrity of the course materials for every
+adopting institution.</p>
+</div>
+<h2 id="course-notes">Course notes<a class="headerlink" href="#course-notes" title="Permanent link">&para;</a></h2>
+<p>The <a href="https://data6.org/notes/">Data 6 course notes</a> serve as lecture notes for the course
+(source: <a href="https://github.com/data-6-berkeley/notes">data-6-berkeley/notes</a>). They complement
+each topic but should be supplemented with foundational texts linked within the notes.</p>
+<h2 id="explore-the-materials-in-your-browser">Explore the materials in your browser<a class="headerlink" href="#explore-the-materials-in-your-browser" title="Permanent link">&para;</a></h2>
+<!-- Shared block: browser-based course calendar (xeus-lite).
+     Host page selects a course into `c` (e.g. c = courses.data8) before including. -->
+<p>The full course calendar is also available as an in-browser notebook preview, with links
+to slides, worksheets, and videos where available. It runs the notebooks directly in your
+browser (xeus-lite), so it is handy for previewing the materials. It is not meant for
+active classroom use, but it is a quick way to explore what the course covers.</p>
+<p><a href="https://dubois-ctds.github.io/data6-xeus-lite/">Browse Data 6 notebooks in your browser</a></p>
+<h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
+<p>The Data 6 course notes are licensed under
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC-BY-NC-SA 4.0)</a>.
+Under ShareAlike, if you adapt the notes you must release your version under the same
+license. See <a href="../../how-to-adopt/licenses/">Understanding Licenses</a> for how to read these
+terms.</p>
+<h2 id="acknowledgments">Acknowledgments<a class="headerlink" href="#acknowledgments" title="Permanent link">&para;</a></h2>
+<p>This material is based upon work supported by the U.S. National Science Foundation under
+award Nos. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2245877">2245877</a>,
+<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2245878">2245878</a>,
+<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2245879">2245879</a>, and the California
+Learning Lab. Learn more about the DUBOIS project at
+<a href="https://dubois-ctds.github.io/">dubois-ctds.github.io</a>.</p>
+<h2 id="need-help">Need help?<a class="headerlink" href="#need-help" title="Permanent link">&para;</a></h2>
+<p>Email <a href="mailto:ds-help@berkeley.edu">ds-help@berkeley.edu</a> or see <a href="../../how-to-adopt/support/">Support</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../data8/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Data 8">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Data 8
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../data9/" class="md-footer__link md-footer__link--next" aria-label="Next: Data 9">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Data 9
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/ucb-dsus-adopters" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "content.code.copy", "content.tabs.link", "search.suggest", "search.highlight", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
