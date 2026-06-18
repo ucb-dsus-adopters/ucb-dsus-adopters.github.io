@@ -1,0 +1,100 @@
+site_name: UC Berkeley Data Science Course Adoption
+site_description: >-
+  The central home for adopting UC Berkeley Data Science courses: standardized
+  setup, Canvas import, and Otter autograding instructions for adopters.
+site_url: https://ucb-dsus-adopters.github.io
+repo_url: https://github.com/ucb-dsus-adopters/ucb-dsus-adopters.github.io
+repo_name: ucb-dsus-adopters
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  logo: assets/dsus_logo.png
+  favicon: assets/favicon.ico
+  font:
+    text: Source Sans 3
+    code: Source Code Pro
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - content.tabs.link
+    - search.suggest
+    - search.highlight
+    - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+  - macros:
+      module_name: main
+      include_dir: docs/_shared
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.snippets:
+      base_path: docs
+      check_paths: true
+
+exclude_docs: |
+  _shared/
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ucb-dsus-adopters
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - How to Adopt:
+      - Overview: how-to-adopt/index.md
+      - Infrastructure & Tools: how-to-adopt/infrastructure.md
+      - Canvas Import: how-to-adopt/canvas-import.md
+      - Otter Autograding: how-to-adopt/autograding.md
+      - Adapting Content: how-to-adopt/adapting-content.md
+      - Understanding Licenses: how-to-adopt/licenses.md
+      - Support: how-to-adopt/support.md
+  - Courses:
+      - Overview: courses/index.md
+      - Data 8: courses/data8.md
+      - Data 6: courses/data6.md
+      - Data 9: courses/data9.md
+      - Data 100: courses/data100.md
+  - Resources:
+      - FAQ: resources/faq.md
+      - Glossary: resources/glossary.md
+      - Changelog: resources/changelog.md
+  - Contact: contact.md
