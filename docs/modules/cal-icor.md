@@ -3,8 +3,7 @@
 # Cal-ICOR Modules
 </div>
 
-[Cal-ICOR](https://www.cal-icor.org/) (California Inter-segmental Computation and Open
-Resources) is an effort to bring computational notebooks into courses across California
+[Cal-ICOR](https://www.cal-icor.org/) (California Interactive Computing Open Resource) is an effort to bring computational notebooks into courses across California
 higher education.
 
 ## Materials
@@ -26,4 +25,6 @@ on how to download and contribute modules.
 
 ## Contact
 
-Questions about Cal-ICOR modules? Email [jedwin321@berkeley.edu](mailto:jedwin321@berkeley.edu).
+Questions about Cal-ICOR? Email [calicor@berkeley.edu](mailto:calicor@berkeley.edu) or
+fill out the [interest form](https://forms.gle/fH5HSAqzDyGpKVXs6). You can also reach
+Cal-ICOR through their [contact page](https://www.cal-icor.org/contact/).

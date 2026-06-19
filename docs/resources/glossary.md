@@ -9,13 +9,15 @@ solutions repository and feed it to the grader along with student submissions.
 quizzes) into Canvas or another LMS.
 
 **Cal-ICOR**
-: A UC Berkeley-led initiative ([cal-icor.org](https://www.cal-icor.org/)) supported by
-the California Education Learning Lab. Cal-ICOR provides a shared, cloud-hosted JupyterHub
-platform for California public colleges and universities adopting data science courses.
+: California Interactive Computing Open Resource
+([cal-icor.org](https://www.cal-icor.org/)), supported by the California Education Learning
+Lab. Cal-ICOR provides cloud-hosted computing infrastructure (including JupyterHubs) for
+California public colleges and universities. See also the
+[Cal-ICOR modules](../modules/cal-icor.md) page.
 
 **Cloudbank**
-: An NSF-funded program that can provision cloud computing, including JupyterHubs, for
-institutions adopting these courses.
+: An NSF-funded program ([cloudbank.org](https://www.cloudbank.org/)) that provisions cloud
+computing infrastructure, including JupyterHubs, for institutions nationwide.
 
 **Common cartridge JupyterHub rewriter**
 : A tool that rewrites the hub URLs and materials-repo references inside a Canvas template

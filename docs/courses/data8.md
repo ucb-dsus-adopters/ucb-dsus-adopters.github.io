@@ -11,6 +11,9 @@ used at Berkeley is available to adopt.
 
 - Course site: [data8.org](http://data8.org) · Textbook:
   [inferentialthinking.com](https://www.inferentialthinking.com/chapters/intro)
+- Zero to Data 8 guide: [data8.org/zero-to-data-8](https://data8.org/zero-to-data-8/intro.html) -
+  syllabus, lectures, course staff, and context for running Data 8
+- Browse notebooks in your browser: [{{ c.title }} xeus-lite]({{ c.xeus_lite }})
 - Public student materials: [{{ c.materials_repo_name }}]({{ c.materials_repo }})
 
 !!! tip "Quick start"

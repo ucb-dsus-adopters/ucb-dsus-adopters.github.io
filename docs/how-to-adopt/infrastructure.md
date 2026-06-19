@@ -1,35 +1,45 @@
 # Infrastructure & Tools
 
-Before importing a course, decide **how your students will run notebooks**. The course
-materials are platform-independent Jupyter notebooks, so several options work.
+Decide **how your students will run notebooks**. The materials on this site are
+platform-independent Jupyter notebooks, so several options work.
 
-## Choose a delivery mode
+!!! tip "Need a hub without adopting curriculum?"
 
-=== "Campus JupyterHub"
+    Cal-ICOR and Cloudbank can provision computing infrastructure independently - you
+    don't need to adopt a course or module to get a JupyterHub. For Cal-ICOR, email
+    [calicor@berkeley.edu](mailto:calicor@berkeley.edu) or fill out the
+    [interest form](https://forms.gle/fH5HSAqzDyGpKVXs6). For Cloudbank, email
+    [Sean Morris](mailto:sean.smorris@berkeley.edu).
 
-    If your institution already runs a JupyterHub, students sign in with campus single
-    sign-on and notebooks open directly. You'll use the
-    [Canvas JupyterHub rewriter](canvas-import.md#2-point-assignments-at-your-jupyterhub) to
-    point assignment links at your hub.
+## Notebook delivery options
 
-=== "Partner-provisioned hub"
+### Campus JupyterHub
 
-    If your institution doesn't already run JupyterHub, we can help connect you with a
-    provisioned environment configured to your campus sign-on:
+If your institution already runs a JupyterHub, students sign in with campus single sign-on
+and notebooks open directly. You'll use the
+[Canvas JupyterHub rewriter](canvas-import.md#2-point-assignments-at-your-jupyterhub) to
+point assignment links at your hub.
 
-    - **[Cloudbank](https://www.cloudbank.org/)** (NSF-funded) — available to adopting
-      institutions nationwide.
-    - **[Cal-ICOR](https://www.cal-icor.org/)** (California Education Learning Lab) — a
-      UC Berkeley-led shared JupyterHub platform for California public colleges and
-      universities.
+### Cal-ICOR
 
-    Provisioning is scheduled, so start this early. We'll give you a realistic timeline when
-    you contact us.
+[Cal-ICOR](https://www.cal-icor.org/) (California Interactive Computing Open Resource) provides cloud-hosted computing infrastructure for California public colleges
+and universities. If your institution is in California and doesn't already run its own hub,
+Cal-ICOR can provision one configured to your campus sign-on. Provisioning is scheduled, so
+start early. Email [calicor@berkeley.edu](mailto:calicor@berkeley.edu) or fill out the
+[interest form](https://forms.gle/fH5HSAqzDyGpKVXs6).
 
-=== "Colab / Binder"
+### Cloudbank
 
-    For piloting or smaller deployments, the notebooks also run on Google Colab or Binder.
-    These are good temporary options while a hub is being prepared.
+[Cloudbank](https://www.cloudbank.org/) is an NSF-funded program that provisions cloud
+computing infrastructure, including JupyterHubs, for institutions nationwide. If your
+institution is outside California or needs broader cloud resources, Cloudbank is a good
+fit. Provisioning is scheduled, so start early.
+
+### Other options
+
+For piloting or smaller deployments, the notebooks also run on Google Colab or Binder.
+These are good temporary options while a hub is being prepared. Longer term, other
+platforms such as NRP, Jetstream, Vocareum, and Codespaces may also be supported.
 
 ## What you need
 

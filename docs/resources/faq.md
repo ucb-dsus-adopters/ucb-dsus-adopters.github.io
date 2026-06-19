@@ -1,9 +1,13 @@
+<div class="hero--section" markdown>
+
 # FAQ
+
+</div>
 
 ??? question "What does it cost to adopt?"
 
-    The course materials and our support are free. Some optional tools have their own costs.
-    For example, Gradescope is a paid service if you choose it for grading.
+    The course and module materials and our support are free. Some optional tools have their
+    own costs. For example, Gradescope is a paid service if you choose it for grading.
 
 ??? question "How long does adoption take?"
 
@@ -39,3 +43,13 @@
 
     Confirm you accepted the GitHub invitations and that your username matches the form.
     See the troubleshooting steps on [Support](../how-to-adopt/support.md).
+
+??? question "Can I get a hub without adopting a course or module?"
+
+    Yes. [Cal-ICOR](https://www.cal-icor.org/) provisions computing infrastructure for
+    California public colleges and universities
+    ([calicor@berkeley.edu](mailto:calicor@berkeley.edu)), and
+    [Cloudbank](https://www.cloudbank.org/) serves institutions nationwide
+    ([Sean Morris](mailto:sean.smorris@berkeley.edu)). Neither requires you to adopt
+    curriculum from this site. See
+    [Infrastructure & Tools](../how-to-adopt/infrastructure.md).

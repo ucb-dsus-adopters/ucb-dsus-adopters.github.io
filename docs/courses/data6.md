@@ -11,6 +11,9 @@ computational thinking and exploratory data analysis. The full set of materials 
 available to adopt.
 
 - Course notes: [data6.org/notes](https://data6.org/notes/)
+- Zero to Data 6 guide: [data6.org/zero-to-data-6](http://data6.org/zero-to-data-6/) -
+  context and resources for running Data 6
+- Browse notebooks in your browser: [{{ c.title }} xeus-lite]({{ c.xeus_lite }})
 - Public student materials: [{{ c.materials_repo_name }}]({{ c.materials_repo }})
 
 !!! tip "Quick start"

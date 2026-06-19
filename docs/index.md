@@ -6,14 +6,15 @@ hide:
 
 <div class="hero" markdown>
 
-# Adopt UC Berkeley Data Science Curriculum
+# Data Science Curriculum Adoption
 
-The central home for bringing UC Berkeley's data science curriculum to your institution:
-courses, modules, Jupyter notebooks, Canvas templates, autograding, and a standardized
-setup guide, all in one place.
+Courses, modules, and computing infrastructure for your institution - developed by
+UC Berkeley and partner institutions. Jupyter notebooks, Canvas templates, autograding,
+and a standardized setup guide, all in one place.
 
 [Start adopting →](how-to-adopt/index.md){ .md-button .md-button--primary }
 [Browse courses](courses/index.md){ .md-button }
+[Browse modules](modules/index.md){ .md-button }
 
 </div>
 
@@ -21,7 +22,9 @@ setup guide, all in one place.
 
 Instructors, course coordinators, and institutions, especially community colleges, who
 want proven, NSF-funded data science courses and modules they can stand up in a couple of
-hours and adapt to their students.
+hours and adapt to their students. If you only need computing infrastructure (a JupyterHub),
+see [Infrastructure & Tools](how-to-adopt/infrastructure.md) - Cal-ICOR and Cloudbank can
+provision a hub independently of curriculum adoption.
 
 ## UC Berkeley Courses
 

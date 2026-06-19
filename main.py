@@ -1,6 +1,6 @@
 """mkdocs-macros hook module.
 
-Defines the per-course variables that drive the shared instruction blocks in
+Defines the per-course and per-module variables that drive the shared instruction blocks in
 ``docs/_shared/``. The shared blocks are pulled into course/guide pages with
 Jinja2 ``{% include %}`` (provided by mkdocs-macros), so any ``{{ ... }}``
 references inside them are resolved against the context set on the host page.

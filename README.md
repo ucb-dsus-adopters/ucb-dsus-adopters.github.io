@@ -1,6 +1,7 @@
 # ucb-dsus-adopters.github.io
 
-Central home for adopting UC Berkeley Data Science courses. Built with
+Central home for data science curriculum adoption - courses, modules, and computing
+infrastructure developed by UC Berkeley and partner institutions. Built with
 [MkDocs Material](https://squidfunk.github.io/mkdocs-material/).
 
 ## Local development

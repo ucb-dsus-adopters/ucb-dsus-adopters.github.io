@@ -1,8 +1,8 @@
-site_name: UC Berkeley Data Science Curriculum Adoption
+site_name: Data Science Curriculum Adoption
 site_description: >-
-  The central home for adopting UC Berkeley Data Science curriculum: courses,
-  modules, and partner resources with standardized setup, Canvas import, and
-  Otter autograding instructions for adopters.
+  Courses, modules, and computing infrastructure for data science adoption.
+  Developed by UC Berkeley and partner institutions, with standardized setup,
+  Canvas import, hub provisioning, and Otter autograding.
 site_url: https://ucb-dsus-adopters.github.io
 repo_url: https://github.com/ucb-dsus-adopters/ucb-dsus-adopters.github.io
 repo_name: ucb-dsus-adopters

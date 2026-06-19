@@ -1,13 +1,17 @@
+<div class="hero--section" markdown>
+
 # Support
 
 We're here to help you adopt successfully.
+
+</div>
 
 ## Email us
 
 For anything not covered on this site (access issues, hub provisioning, Canvas import
 errors, or grading questions), email **[{{ support_email }}](mailto:{{ support_email }})**.
 When reporting an access problem, include the **GitHub username** you submitted on the
-course's instructor interest form.
+interest form (if applicable).
 
 ## Common issues
 

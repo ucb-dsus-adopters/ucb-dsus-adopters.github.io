@@ -24,6 +24,8 @@
   [ds-modules.github.io/ecc-cs9-textbook](https://ds-modules.github.io/ecc-cs9-textbook/)
 - **Data Science Modules:**
   [ds-modules.github.io/ecc-textbook](https://ds-modules.github.io/ecc-textbook/ecc-calenviroscreen/)
+- **Browse notebooks in your browser:**
+  [{{ c.title }} xeus-lite]({{ c.xeus_lite }})
 - **Public student materials:**
   [{{ c.materials_repo_name }}]({{ c.materials_repo }})
 - **Private instructor repo** (solutions and course-development materials):
