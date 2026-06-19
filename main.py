@@ -58,7 +58,8 @@ COURSES = {
     # Data 9 (Practical Data Science / CS9): public student materials and a private
     # instructor repo; full adoption package still in progress.
     "data9": {
-        "title": "Data 9",
+        "title": "El Camino College CSCI 9: Practical Data Science",
+        "catalog_url": "http://catalog.elcamino.edu/preview_course_nopop.php?catoid=12&coid=25255",
         "materials_repo": "https://github.com/eccdatascience/csci9-sp26-student",
         "materials_repo_name": "eccdatascience/csci9-sp26-student",
         "solutions_repo": "https://github.com/ds-modules/cs-9-dev",

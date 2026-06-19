@@ -25,11 +25,11 @@ course-specific notes.
 
     Full adoption package. Interdisciplinary introduction with course notes and grading infrastructure.
 
--   ![Data 9](../assets/data9_logo.png){ .card-logo } **[Data 9: Practical Data Science](data9.md)**
+-   **[El Camino College CSCI 9: Practical Data Science](data9.md)**
 
     ---
 
-    Adoption materials in progress. Existing resources available now.
+    *Not a UC Berkeley course.* Adoption materials in progress. Existing resources available now.
 
 -   ![Data 100](../assets/data100_logo.png){ .card-logo } **[Data 100: Principles and Techniques of Data Science](data100.md)**
 

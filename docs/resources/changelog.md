@@ -9,5 +9,5 @@ A record of notable changes to this adoption site.
 - **Standardized adoption guide.** Setup, Canvas import, and Otter autograding instructions
   are now a single source of truth, composed into each course page.
 - **Data 8 and Data 6** ported as full adoption packages.
-- **Data 9 and Data 100** added as resource pages while full adoption materials are in
-  progress.
+- **El Camino College CSCI 9 (Practical Data Science) and Data 100** added as resource pages
+  while full adoption materials are in progress.

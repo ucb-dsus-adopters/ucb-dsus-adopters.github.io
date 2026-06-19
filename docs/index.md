@@ -45,13 +45,13 @@ adapt to their students.
 
     [:octicons-arrow-right-24: Adopt Data 6](courses/data6.md)
 
--   ![Data 9](assets/data9_logo.png){ .card-logo } **Data 9: Practical Data Science**
+-   **El Camino College CSCI 9: Practical Data Science**
 
     ---
 
-    Adoption materials are in progress, resources are available now.
+    *Not a UC Berkeley course.* Adoption materials are in progress, resources are available now.
 
-    [:octicons-arrow-right-24: Data 9 resources](courses/data9.md)
+    [:octicons-arrow-right-24: Course resources](courses/data9.md)
 
 -   ![Data 100](assets/data100_logo.png){ .card-logo } **Data 100: Principles and Techniques of Data Science**
 
