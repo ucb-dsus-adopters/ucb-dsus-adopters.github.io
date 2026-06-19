@@ -52,13 +52,13 @@
   border: 0;
 }
 
-/* Course logos used inside the home/course grid cards, sitting inline to the
-   left of the course name. */
+/* Course logos used inside the home/course grid cards, floating left so
+   wrapped text stays beside the logo instead of dropping below it. */
 .md-typeset .grid.cards img.card-logo {
   height: 2rem;
   width: auto;
-  vertical-align: middle;
-  margin: 0 0.5rem 0 0;
+  float: left;
+  margin: 0.15rem 0.5rem 0.25rem 0;
 }
 
 /* Force a 2x2 layout (collapses to a single column on small screens). */

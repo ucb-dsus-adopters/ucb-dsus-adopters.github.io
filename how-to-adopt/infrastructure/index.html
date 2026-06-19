@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="The central home for adopting UC Berkeley Data Science curriculum: courses, modules, and partner resources with standardized setup, Canvas import, and Otter autograding instructions for adopters.">
+        <meta name="description" content="Courses, modules, and computing infrastructure for data science adoption. Developed by UC Berkeley and partner institutions, with standardized setup, Canvas import, hub provisioning, and Otter autograding.">
       
       
       
@@ -27,7 +27,7 @@
     
     
       
-        <title>Infrastructure & Tools - UC Berkeley Data Science Curriculum Adoption</title>
+        <title>Infrastructure & Tools - Data Science Curriculum Adoption</title>
       
     
     
@@ -94,7 +94,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="UC Berkeley Data Science Curriculum Adoption" class="md-header__button md-logo" aria-label="UC Berkeley Data Science Curriculum Adoption" data-md-component="logo">
+    <a href="../.." title="Data Science Curriculum Adoption" class="md-header__button md-logo" aria-label="Data Science Curriculum Adoption" data-md-component="logo">
       
   <img src="../../assets/dsus_logo.png" alt="logo">
 
@@ -107,7 +107,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            UC Berkeley Data Science Curriculum Adoption
+            Data Science Curriculum Adoption
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -381,12 +381,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="UC Berkeley Data Science Curriculum Adoption" class="md-nav__button md-logo" aria-label="UC Berkeley Data Science Curriculum Adoption" data-md-component="logo">
+    <a href="../.." title="Data Science Curriculum Adoption" class="md-nav__button md-logo" aria-label="Data Science Curriculum Adoption" data-md-component="logo">
       
   <img src="../../assets/dsus_logo.png" alt="logo">
 
     </a>
-    UC Berkeley Data Science Curriculum Adoption
+    Data Science Curriculum Adoption
   </label>
   
     <div class="md-nav__source">
@@ -609,13 +609,63 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#choose-a-delivery-mode" class="md-nav__link">
+  <a href="#notebook-delivery-options" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Choose a delivery mode
+        Notebook delivery options
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Notebook delivery options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#campus-jupyterhub" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Campus JupyterHub
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cal-icor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cal-ICOR
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloudbank" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloudbank
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other options
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1347,13 +1397,63 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#choose-a-delivery-mode" class="md-nav__link">
+  <a href="#notebook-delivery-options" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Choose a delivery mode
+        Notebook delivery options
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Notebook delivery options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#campus-jupyterhub" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Campus JupyterHub
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cal-icor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cal-ICOR
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloudbank" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloudbank
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other options
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1411,36 +1511,37 @@
 
 
 <h1 id="infrastructure-tools">Infrastructure &amp; Tools<a class="headerlink" href="#infrastructure-tools" title="Permanent link">&para;</a></h1>
-<p>Before importing a course, decide <strong>how your students will run notebooks</strong>. The course
-materials are platform-independent Jupyter notebooks, so several options work.</p>
-<h2 id="choose-a-delivery-mode">Choose a delivery mode<a class="headerlink" href="#choose-a-delivery-mode" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Campus JupyterHub</label><label for="__tabbed_1_2">Partner-provisioned hub</label><label for="__tabbed_1_3">Colab / Binder</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>If your institution already runs a JupyterHub, students sign in with campus single
-sign-on and notebooks open directly. You'll use the
+<p>Decide <strong>how your students will run notebooks</strong>. The materials on this site are
+platform-independent Jupyter notebooks, so several options work.</p>
+<div class="admonition tip">
+<p class="admonition-title">Need a hub without adopting curriculum?</p>
+<p>Cal-ICOR and Cloudbank can provision computing infrastructure independently - you
+don't need to adopt a course or module to get a JupyterHub. For Cal-ICOR, email
+<a href="mailto:calicor@berkeley.edu">calicor@berkeley.edu</a> or fill out the
+<a href="https://forms.gle/fH5HSAqzDyGpKVXs6">interest form</a>. For Cloudbank, email
+<a href="mailto:sean.smorris@berkeley.edu">Sean Morris</a>.</p>
+</div>
+<h2 id="notebook-delivery-options">Notebook delivery options<a class="headerlink" href="#notebook-delivery-options" title="Permanent link">&para;</a></h2>
+<h3 id="campus-jupyterhub">Campus JupyterHub<a class="headerlink" href="#campus-jupyterhub" title="Permanent link">&para;</a></h3>
+<p>If your institution already runs a JupyterHub, students sign in with campus single sign-on
+and notebooks open directly. You'll use the
 <a href="../canvas-import/#2-point-assignments-at-your-jupyterhub">Canvas JupyterHub rewriter</a> to
 point assignment links at your hub.</p>
-</div>
-<div class="tabbed-block">
-<p>If your institution doesn't already run JupyterHub, we can help connect you with a
-provisioned environment configured to your campus sign-on:</p>
-<ul>
-<li><strong><a href="https://www.cloudbank.org/">Cloudbank</a></strong> (NSF-funded) — available to adopting
-  institutions nationwide.</li>
-<li><strong><a href="https://www.cal-icor.org/">Cal-ICOR</a></strong> (California Education Learning Lab) — a
-  UC Berkeley-led shared JupyterHub platform for California public colleges and
-  universities.</li>
-</ul>
-<p>Provisioning is scheduled, so start this early. We'll give you a realistic timeline when
-you contact us.</p>
-</div>
-<div class="tabbed-block">
+<h3 id="cal-icor">Cal-ICOR<a class="headerlink" href="#cal-icor" title="Permanent link">&para;</a></h3>
+<p><a href="https://www.cal-icor.org/">Cal-ICOR</a> (California Interactive Computing Open Resource) provides cloud-hosted computing infrastructure for California public colleges
+and universities. If your institution is in California and doesn't already run its own hub,
+Cal-ICOR can provision one configured to your campus sign-on. Provisioning is scheduled, so
+start early. Email <a href="mailto:calicor@berkeley.edu">calicor@berkeley.edu</a> or fill out the
+<a href="https://forms.gle/fH5HSAqzDyGpKVXs6">interest form</a>.</p>
+<h3 id="cloudbank">Cloudbank<a class="headerlink" href="#cloudbank" title="Permanent link">&para;</a></h3>
+<p><a href="https://www.cloudbank.org/">Cloudbank</a> is an NSF-funded program that provisions cloud
+computing infrastructure, including JupyterHubs, for institutions nationwide. If your
+institution is outside California or needs broader cloud resources, Cloudbank is a good
+fit. Provisioning is scheduled, so start early.</p>
+<h3 id="other-options">Other options<a class="headerlink" href="#other-options" title="Permanent link">&para;</a></h3>
 <p>For piloting or smaller deployments, the notebooks also run on Google Colab or Binder.
-These are good temporary options while a hub is being prepared.</p>
-</div>
-</div>
-</div>
+These are good temporary options while a hub is being prepared. Longer term, other
+platforms such as NRP, Jetstream, Vocareum, and Codespaces may also be supported.</p>
 <h2 id="what-you-need">What you need<a class="headerlink" href="#what-you-need" title="Permanent link">&para;</a></h2>
 <ul>
 <li>A <strong>GitHub account</strong> (free): <a href="https://github.com">create one here</a></li>
