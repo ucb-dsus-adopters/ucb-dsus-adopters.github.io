@@ -182,6 +182,18 @@
   background: linear-gradient(120deg, #0B4F8A 0%, #4F9BD0 100%);
 }
 
+.md-typeset .course-hero--cal-icor {
+  background: linear-gradient(120deg, #152D4A 0%, #2A5F8F 100%);
+}
+
+.md-typeset .course-hero--ds-modules {
+  background: linear-gradient(120deg, #003262 0%, #3B7EA1 100%);
+}
+
+.md-typeset .course-hero--ecc {
+  background: linear-gradient(120deg, #0D3B7A 0%, #2B78C2 100%);
+}
+
 .md-typeset .course-hero h1 {
   color: #ffffff;
   margin: 0;
