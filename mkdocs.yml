@@ -1,7 +1,8 @@
-site_name: UC Berkeley Data Science Course Adoption
+site_name: UC Berkeley Data Science Curriculum Adoption
 site_description: >-
-  The central home for adopting UC Berkeley Data Science courses: standardized
-  setup, Canvas import, and Otter autograding instructions for adopters.
+  The central home for adopting UC Berkeley Data Science curriculum: courses,
+  modules, and partner resources with standardized setup, Canvas import, and
+  Otter autograding instructions for adopters.
 site_url: https://ucb-dsus-adopters.github.io
 repo_url: https://github.com/ucb-dsus-adopters/ucb-dsus-adopters.github.io
 repo_name: ucb-dsus-adopters
@@ -89,10 +90,14 @@ nav:
       - Support: how-to-adopt/support.md
   - Courses:
       - Overview: courses/index.md
-      - Data 8: courses/data8.md
       - Data 6: courses/data6.md
-      - ECC CSCI 9: courses/data9.md
+      - Data 8: courses/data8.md
       - Data 100: courses/data100.md
+      - ECC CSCI 9: courses/csci9.md
+  - Modules:
+      - Overview: modules/index.md
+      - Cal-ICOR: modules/cal-icor.md
+      - Data Science Modules: modules/ds-modules.md
   - Resources:
       - FAQ: resources/faq.md
       - Glossary: resources/glossary.md

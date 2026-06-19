@@ -2,13 +2,13 @@
 
 # About
 
-The central home for adopting UC Berkeley Data Science courses.
+The central home for adopting UC Berkeley Data Science curriculum.
 
 </div>
 
-This site brings the full set of materials used to teach these courses at Berkeley (notebooks, solutions,
-slides, worksheets, Canvas templates, and autograding) to instructors and institutions
-everywhere.
+This site brings the full set of materials used to teach courses and modules at Berkeley
+and partner institutions (notebooks, solutions, slides, worksheets, Canvas templates, and
+autograding) to instructors and institutions everywhere.
 
 ## Why adopt
 

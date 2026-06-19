@@ -1,5 +1,6 @@
 {% set c = courses.data9 %}
-<div class="course-hero course-hero--data9" markdown>
+<div class="course-hero course-hero--ecc" markdown>
+![El Camino College](../assets/ecc.jpeg){ .hero-logo }
 # El Camino College CSCI 9: Practical Data Science
 </div>
 
