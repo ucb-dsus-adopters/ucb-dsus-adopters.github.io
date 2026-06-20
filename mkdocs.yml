@@ -10,11 +10,12 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/dsus_logo.png
   favicon: assets/favicon.ico
   font:
     text: Source Sans 3
-    code: Source Code Pro
+    code: Source Code Prothe
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default

@@ -1,22 +1,9 @@
 ---
+template: home.html
 hide:
   - navigation
   - toc
 ---
-
-<div class="hero" markdown>
-
-# Data Science Curriculum Adoption
-
-Courses, modules, and computing infrastructure for your institution - developed by
-UC Berkeley and partner institutions. Jupyter notebooks, Canvas templates, autograding,
-and a standardized setup guide, all in one place.
-
-[Start adopting →](how-to-adopt/index.md){ .md-button .md-button--primary }
-[Browse courses](courses/index.md){ .md-button }
-[Browse modules](modules/index.md){ .md-button }
-
-</div>
 
 ## Who this is for
 

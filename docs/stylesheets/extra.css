@@ -33,6 +33,103 @@
   --md-typeset-a-color: #6fa8cc;
 }
 
+/* Full-viewport home hero. Fills the screen below the header, with centered
+   text and a scroll-down indicator. Content scrolls up over it. */
+.home-hero {
+  min-height: calc(100vh - 4rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--ucb-blue) 0%, #1b4a7a 40%, var(--ucb-founders-rock) 100%);
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem 2rem;
+  position: relative;
+  border-bottom: 4px solid var(--ucb-gold);
+}
+
+.home-hero__inner {
+  max-width: 48rem;
+}
+
+.home-hero h1 {
+  color: #ffffff;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0 0 1.2rem;
+  line-height: 1.15;
+}
+
+.home-hero p {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0 0 2rem;
+}
+
+.home-hero__buttons {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.home-hero .md-button {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.4rem;
+}
+
+.home-hero .md-button:hover {
+  background-color: #ffffff;
+  color: var(--ucb-blue);
+  border-color: #ffffff;
+}
+
+.home-hero .md-button--primary {
+  background-color: var(--ucb-gold);
+  border-color: var(--ucb-gold);
+  color: var(--ucb-blue);
+}
+
+.home-hero .md-button--primary:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: var(--ucb-blue);
+}
+
+.home-hero__scroll {
+  position: absolute;
+  bottom: 2rem;
+}
+
+.home-hero__arrow {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-right: 2px solid rgba(255, 255, 255, 0.6);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  transform: rotate(45deg);
+  animation: hero-bounce 2s infinite;
+}
+
+@keyframes hero-bounce {
+  0%, 20%, 50%, 80%, 100% { transform: rotate(45deg) translateY(0); }
+  40% { transform: rotate(45deg) translateY(0.5rem); }
+  60% { transform: rotate(45deg) translateY(0.25rem); }
+}
+
+@media screen and (max-width: 44.9375em) {
+  .home-hero h1 {
+    font-size: 1.8rem;
+  }
+  .home-hero p {
+    font-size: 1rem;
+  }
+}
+
 /* Responsive 16:9 wrapper for embedded tutorial videos. */
 .video-wrapper {
   position: relative;

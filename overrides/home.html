@@ -1,0 +1,35 @@
+{% extends "main.html" %}
+
+{% block tabs %}
+  {{ super() }}
+
+  <section class="home-hero">
+    <div class="home-hero__inner">
+      <h1>Data Science Curriculum Adoption</h1>
+      <p>
+        Courses, modules, and computing infrastructure for your institution -
+        developed by UC Berkeley and partner institutions. Jupyter notebooks,
+        Canvas templates, autograding, and a standardized setup guide, all in
+        one place.
+      </p>
+      <div class="home-hero__buttons">
+        <a href="{{ 'how-to-adopt/' | url }}" class="md-button md-button--primary">
+          Start adopting
+        </a>
+        <a href="{{ 'courses/' | url }}" class="md-button">
+          Browse courses
+        </a>
+        <a href="{{ 'modules/' | url }}" class="md-button">
+          Browse modules
+        </a>
+      </div>
+    </div>
+    <div class="home-hero__scroll">
+      <span class="home-hero__arrow"></span>
+    </div>
+  </section>
+{% endblock %}
+
+{% block content %}
+  {{ super() }}
+{% endblock %}
