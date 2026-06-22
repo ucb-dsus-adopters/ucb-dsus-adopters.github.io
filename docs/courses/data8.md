@@ -55,8 +55,6 @@ the invitations to the private solutions repository
 Download the Version 2 Canvas template (provided after you complete the adoption form;
 email [{{ support_email }}](mailto:{{ support_email }}) if you need the link).
 
-:material-play-circle: [Screen recording: configuring the Canvas shell](https://drive.google.com/file/d/1rBG97FUwMdV3QQas7znuH8pud-KC8yPM/view)
-
 ### Point assignments at your JupyterHub
 
 {% include 'canvas-rewriter.md' %}

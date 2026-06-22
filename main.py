@@ -38,7 +38,7 @@ COURSES = {
         "materials_repo_name": "data-8/materials-fds-v2",
         "solutions_repo": "https://github.com/data-8/materials-fds-private",
         "solutions_repo_name": "materials-fds-private",
-        "interest_form": "https://forms.gle/y5aQBi816xDXKe7r7",
+        "interest_form": "https://docs.google.com/forms/d/e/1FAIpQLSdvwtCh3Pog_vWhYOxlvcVLw6mBp6-tetZmLm4vAMGU0hHmkw/viewform",
         # Browser-based course calendar (xeus-lite): slides, worksheets, videos.
         "xeus_lite": "http://data8.org/materials-fds-xeus-lite/",
         # Data 8 does not pin an otter-grader version in the adoption package.

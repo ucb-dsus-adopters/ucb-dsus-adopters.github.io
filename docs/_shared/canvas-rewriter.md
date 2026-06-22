@@ -7,10 +7,14 @@ file **before** importing:
 
 - Upload your Canvas template (zip or `.imscc` file) to the rewriter
 - Enter your JupyterHub URL (e.g., `{{ default_hub }}/hub` or your institution's hub URL)
-- Enter the materials repository URL: for {{ c.title }}, use `{{ c.materials_repo }}`
+- Enter the materials repository URL: use **your fork** of the student materials, not the
+  upstream Berkeley repo. Fork [{{ c.materials_repo_name }}]({{ c.materials_repo }}) first,
+  then enter your fork URL (e.g.,
+  `https://github.com/YOUR_GITHUB_USERNAME/{{ c.materials_repo_name.split('/')[-1] }}`).
+  For {{ c.title }}, fork from `{{ c.materials_repo }}`.
 - Scan and preview to see how links will change
-- Confirm that old links are being rewritten to your hub and that the repo points to
-  `{{ c.materials_repo_name }}`
+- Confirm that old links are being rewritten to your hub and that the repo points to your
+  fork
 - Rewrite and download the updated file
 
 <div class="video-wrapper">
