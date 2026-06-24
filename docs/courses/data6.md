@@ -10,6 +10,7 @@ computer science, and social science to give students a practical introduction t
 computational thinking and exploratory data analysis. The full set of materials is
 available to adopt.
 
+- Curriculum and modular adoption: [dubois-ctds.github.io](https://dubois-ctds.github.io/)
 - Course notes: [data6.org/notes](https://data6.org/notes/)
 - Zero to Data 6 guide: [data6.org/zero-to-data-6](http://data6.org/zero-to-data-6/) -
   context and resources for running Data 6
