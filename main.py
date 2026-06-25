@@ -65,6 +65,7 @@ COURSES = {
         "solutions_repo": "https://github.com/ds-modules/cs-9-dev",
         "solutions_repo_name": "ds-modules/cs-9-dev",
         "access_email": "jedwin321@berkeley.edu",
+        "interest_form": "https://docs.google.com/forms/d/e/1FAIpQLScla1CwVQoBl17eVJjnf5sWLq4bKYIZeiA6Ra_HNZD-o95_JA/viewform",
         "xeus_lite": "https://ds-modules.github.io/cs9-xeus-lite/",
     },
     # Data 100: public semester materials and a private instructor/solutions repo;

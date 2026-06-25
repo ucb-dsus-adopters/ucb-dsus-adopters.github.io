@@ -29,8 +29,8 @@
 - **Public student materials:**
   [{{ c.materials_repo_name }}]({{ c.materials_repo }})
 - **Private instructor repo** (solutions and course-development materials):
-  [{{ c.solutions_repo_name }}]({{ c.solutions_repo }}) and email
-  [{{ c.access_email }}](mailto:{{ c.access_email }}) for access.
+  [{{ c.solutions_repo_name }}]({{ c.solutions_repo }}). To request access, complete the
+  [CSCI 9 Instructor Interest Form]({{ c.interest_form }}).
 
 ## Explore the materials in your browser
 
@@ -38,5 +38,6 @@
 
 ## Get notified
 
-Interested in adopting this course? Email [{{ support_email }}](mailto:{{ support_email }}) or
-[{{ c.access_email }}](mailto:{{ c.access_email }}) and we'll help you get started.
+Interested in adopting this course? Complete the
+[CSCI 9 Instructor Interest Form]({{ c.interest_form }}) or email
+[{{ support_email }}](mailto:{{ support_email }}) and we'll help you get started.
