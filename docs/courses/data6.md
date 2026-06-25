@@ -38,7 +38,7 @@ accept the invitations to the private solutions repository
 
 ## 2. Set up Canvas
 
-Download the [Data 6 Canvas template](https://drive.google.com/file/d/1ioxchiwz1PPDJk6A5X-HVJeIR0n4rMRl/view?usp=sharing).
+Download the [Data 6 Canvas template](https://drive.google.com/file/d/1lt5DsJRwBF78YzEOax7jOfl3gZNav9qP/view?usp=sharing).
 
 ### Point assignments at your JupyterHub
 

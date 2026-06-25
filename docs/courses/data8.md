@@ -52,8 +52,7 @@ the invitations to the private solutions repository
 
 ## 2. Set up Canvas
 
-Download the Version 2 Canvas template (provided after you complete the adoption form;
-email [{{ support_email }}](mailto:{{ support_email }}) if you need the link).
+Download the [Version 2 Canvas template](https://drive.google.com/file/d/1jH1yWJPhiGQC7iueIrdMl9EkKLOB-3Oh/view?usp=sharing).
 
 ### Point assignments at your JupyterHub
 
