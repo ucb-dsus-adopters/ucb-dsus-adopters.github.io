@@ -19,9 +19,12 @@ available to adopt.
 
 !!! tip "Quick start"
 
-    1. Complete the [Data 6 Instructor Interest Form]({{ c.interest_form }})
-    2. Fork the [student materials]({{ c.materials_repo }})
-    3. Follow the steps below
+    - Complete the [Data 6 Instructor Interest Form]({{ c.interest_form }})
+    - Fork the [student materials]({{ c.materials_repo }})
+    - Download the [Canvas shell template]({{ c.canvas_template }})
+    - Run the [Canvas JupyterHub rewriter]({{ rewriter_url }})
+    - Upload to Canvas
+    - Grade with Otter
 
 ## 1. Get access
 
@@ -38,7 +41,7 @@ accept the invitations to the private solutions repository
 
 ## 2. Set up Canvas
 
-Download the [Data 6 Canvas template](https://drive.google.com/file/d/1lt5DsJRwBF78YzEOax7jOfl3gZNav9qP/view?usp=sharing).
+Download the [Data 6 Canvas template]({{ c.canvas_template }}).
 
 ### Point assignments at your JupyterHub
 

@@ -18,26 +18,33 @@ used at Berkeley is available to adopt.
 
 !!! tip "Quick start"
 
-    1. Complete the [Data 8 Instructor Interest Form]({{ c.interest_form }})
-    2. Fork the [student materials]({{ c.materials_repo }})
-    3. Follow the steps below
+    - Complete the [Data 8 Instructor Interest Form]({{ c.interest_form }})
+    - Choose your adoption version (Version 1 or Version 2 — see step 1 below)
+    - Fork the [student materials]({{ c.materials_repo }})
+    - Download the [Canvas shell template]({{ c.canvas_template }})
+    - Run the [Canvas JupyterHub rewriter]({{ rewriter_url }})
+    - Upload to Canvas
+    - Grade with Otter
 
-## Choose your adoption version
+## 1. Choose your adoption version
 
 Both versions use the **same workflow below**; they differ mainly in which materials repo
 and Canvas template you use.
 
 | | **Version 1** | **Version 2 (recommended)** |
 | --- | --- | --- |
-| **Materials repo** | [materials-fds](https://github.com/data-8/materials-fds) | [materials-fds-v2](https://github.com/data-8/materials-fds-v2) |
-| **Basis** | Spring 2022 track | Fall 2025 |
-| **Curriculum** | Classic Data 8 sequence | Adds multiple linear regression |
+| **Materials repo** | [materials-fds](https://github.com/data-8/materials-fds) | [materials-fds-v2](https://github.com/ucb-dsus-adopters/materials-fds-v2) |
+| **Basis** | Spring 2022 | Spring 2026 |
+| **Notable features** | Classic Data 8 sequence | [Jupytutor]({{ c.jupytutor_url }}) integrated |
 | **Canvas shell** | Original template | UI + accessibility improvements |
 
-New adopters should use **Version 2**; returning adopters can stay on Version 1 for
-continuity. The variable values on this page reflect Version 2.
+See [Spring 2022 vs Spring 2026 changes (PDF)]({{ c.version_changes_pdf }}) for a full
+comparison between versions.
 
-## 1. Get access
+New adopters should use **Version 2**; returning adopters can stay on Version 1 for
+continuity. The variable values on this page reflect Version 2 (Spring 2026).
+
+## 2. Get access
 
 Create a GitHub account if needed, then complete the
 [Instructor Interest Form]({{ c.interest_form }}) (indicate which version you'll use). Fork
@@ -50,9 +57,9 @@ the invitations to the private solutions repository
 
 {% include 'forking-video.md' %}
 
-## 2. Set up Canvas
+## 3. Set up Canvas
 
-Download the [Version 2 Canvas template](https://drive.google.com/file/d/1jH1yWJPhiGQC7iueIrdMl9EkKLOB-3Oh/view?usp=sharing).
+Download the [Version 2 Canvas template]({{ c.canvas_template }}).
 
 ### Point assignments at your JupyterHub
 
@@ -62,13 +69,13 @@ Download the [Version 2 Canvas template](https://drive.google.com/file/d/1jH1yWJ
 
 {% include 'canvas-import.md' %}
 
-## 3. Student workflow
+## 4. Student workflow
 
 :material-play-circle: [Screen recording: student workflow](https://drive.google.com/file/d/1flQlOZ6ViM0S7S0k0-ZLFZsFNY5ZXMON/view)
 
 {% include 'student-workflow.md' %}
 
-## 4. Grade with Otter
+## 5. Grade with Otter
 
 {% include 'otter-service.md' %}
 
