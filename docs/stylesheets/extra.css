@@ -149,6 +149,169 @@
   border: 0;
 }
 
+/* Inline Canvas JupyterHub rewriter on the tools page. */
+.canvas-rewriter {
+  position: relative;
+  margin: 1.5em 0 2.5em;
+  padding: 1.5rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.2rem;
+  background: var(--md-default-bg-color);
+}
+
+.canvas-rewriter .rewriter-section {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.canvas-rewriter .rewriter-section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.canvas-rewriter label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.canvas-rewriter input[type="text"],
+.canvas-rewriter input[type="file"] {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+  font-size: 0.95rem;
+  background: var(--md-code-bg-color);
+  color: var(--md-default-fg-color);
+}
+
+.canvas-rewriter input[type="text"]:focus {
+  outline: none;
+  border-color: var(--md-primary-fg-color);
+}
+
+.canvas-rewriter .rewriter-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.canvas-rewriter .rewriter-col {
+  flex: 1;
+  min-width: 220px;
+}
+
+.canvas-rewriter button {
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.canvas-rewriter button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.canvas-rewriter button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.canvas-rewriter .btn-secondary {
+  background: transparent;
+  color: var(--md-default-fg-color);
+  border: 1px solid var(--md-default-fg-color--lighter);
+}
+
+.canvas-rewriter .rewriter-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+}
+
+.canvas-rewriter .rewriter-stats div {
+  background: var(--md-code-bg-color);
+  padding: 0.75rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.canvas-rewriter .rewriter-stats span {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--md-primary-fg-color);
+  margin-top: 0.2rem;
+}
+
+.canvas-rewriter pre {
+  background: var(--md-code-bg-color);
+  padding: 0.6rem;
+  border-radius: 0.2rem;
+  overflow-x: auto;
+  font-size: 0.8rem;
+  margin: 0.25rem 0;
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.canvas-rewriter .sample-item {
+  margin-bottom: 1rem;
+  border-left: 3px solid var(--md-primary-fg-color);
+  padding: 0.75rem 1rem;
+  background: var(--md-code-bg-color);
+  border-radius: 0 0.2rem 0.2rem 0;
+}
+
+.canvas-rewriter .sample-item strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.canvas-rewriter #loading-overlay {
+  position: absolute;
+  inset: 0;
+  background: color-mix(in srgb, var(--md-default-bg-color) 85%, transparent);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  border-radius: 0.2rem;
+  backdrop-filter: blur(2px);
+}
+
+.canvas-rewriter .loading-spinner {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 3px solid var(--md-primary-fg-color);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: rewriter-spin 1s linear infinite;
+  margin-bottom: 0.75rem;
+}
+
+@keyframes rewriter-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 /* Course logos used inside the home/course grid cards, floating left so
    wrapped text stays beside the logo instead of dropping below it. */
 .md-typeset .grid.cards img.card-logo {

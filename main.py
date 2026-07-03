@@ -18,12 +18,14 @@ Licensing is deliberately NOT modeled here. Each course states its own license
 directly on its page, since licenses differ per course (and per content type).
 """
 
+import shutil
+from pathlib import Path
 
 # Values shared by every course / guide page.
 COMMON = {
     "support_email": "ds-help@berkeley.edu",
     "grader_url": "https://grader.datahub.berkeley.edu/",
-    "rewriter_url": "https://ds-modules.github.io/canvas-jupyterhub-rewriter/",
+    "rewriter_url": "https://ucb-dsus-adopters.github.io/tools/canvas-rewriter/",
     "otter_org_url": "https://github.com/orgs/otter-service-stdalone",
     "default_hub": "datahub.berkeley.edu",
 }
@@ -89,3 +91,14 @@ def define_env(env):
     env.variables["courses"] = COURSES
     for key, value in COMMON.items():
         env.variables[key] = value
+
+
+def on_post_build(env):
+    """Copy the built Canvas JupyterHub rewriter script into the site output."""
+    dist = Path(__file__).resolve().parent / "canvas-jupyterhub-rewriter" / "dist"
+    bundle = dist / "rewriter.js"
+    if not bundle.is_file():
+        return
+    target_dir = Path(env.conf["site_dir"]) / "assets" / "canvas-rewriter"
+    target_dir.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(bundle, target_dir / "rewriter.js")
