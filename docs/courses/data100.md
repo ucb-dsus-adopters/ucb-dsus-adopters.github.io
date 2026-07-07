@@ -20,10 +20,11 @@ and machine learning.
 - **Public student materials:**
   [{{ c.materials_repo_name }}]({{ c.materials_repo }})
 - **Private instructor repo** (solutions and instructor materials):
-  [{{ c.solutions_repo_name }}]({{ c.solutions_repo }}) — email
-  [{{ support_email }}](mailto:{{ support_email }}) for access.
+  [{{ c.solutions_repo_name }}]({{ c.solutions_repo }}) — complete the
+  [Data 100 Instructor Interest Form]({{ c.interest_form }}) for access.
 
-## Get notified
+## Get started
 
-Interested in adopting Data 100? Email [{{ support_email }}](mailto:{{ support_email }})
-and we'll help you get started.
+Interested in adopting Data 100? Complete the
+[Data 100 Instructor Interest Form]({{ c.interest_form }}) or email
+[{{ support_email }}](mailto:{{ support_email }}) and we'll help you get started.

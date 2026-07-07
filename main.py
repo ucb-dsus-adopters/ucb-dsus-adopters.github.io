@@ -82,6 +82,7 @@ COURSES = {
         "materials_repo_name": "DS-100/sp25-student",
         "solutions_repo": "https://github.com/DS-100/materials-ptds-private",
         "solutions_repo_name": "DS-100/materials-ptds-private",
+        "interest_form": "https://docs.google.com/forms/d/e/1FAIpQLSeG18jZY-SnK7kZc1av2fbSrBc6Y7BgBA1otguuOlyBc7IJyw/viewform",
     },
 }
 
