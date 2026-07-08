@@ -1,8 +1,24 @@
 # Canvas JupyterHub Rewriter
 
 Upload a Canvas common-cartridge export (`.imscc` or `.zip`) and rewrite JupyterHub and
-materials-repo links before importing. Everything runs in your browser—nothing is uploaded
+materials-repo links before importing. Everything runs in your browser; nothing is uploaded
 to a server.
+
+!!! tip "Quick start"
+
+    - Upload your Canvas template (`.imscc` or `.zip` file) below
+    - Enter your JupyterHub URL (e.g., `https://your-hub.example.edu/hub/`)
+    - Enter your **forked** student materials repository URL, not the upstream Berkeley repo
+    - Click **Scan & Preview** to see how links will change
+    - Click **Rewrite & Download**, then import the updated file into Canvas
+
+!!! note "Use your fork, not the upstream repo"
+
+    The rewriter updates assignment links to point at **your** JupyterHub and **your fork**
+    of the student materials. Fork the course's public materials repo on GitHub first, then
+    paste that fork URL into **New Repo URL**. See your
+    [course adoption page](../courses/index.md) for the repo to fork. A video walkthrough is
+    below the tool.
 
 <div class="canvas-rewriter" markdown="0">
   <div class="rewriter-section">
@@ -65,13 +81,7 @@ to a server.
 
 <script type="module" src="/assets/canvas-rewriter/rewriter.js"></script>
 
-## Steps
-
-1. Upload your Canvas template (`.imscc` or `.zip` file)
-2. Enter your JupyterHub URL (e.g., `https://your-hub.example.edu/hub/`)
-3. Enter your **forked** student materials repository URL—not the upstream Berkeley repo
-4. Scan and preview to see how links will change
-5. Rewrite and download the updated file, then import into Canvas
+## Walkthrough video
 
 <div class="video-wrapper">
 <iframe src="https://www.youtube.com/embed/xbvQF5HmwUw" title="JupyterHub rewriter walkthrough" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
