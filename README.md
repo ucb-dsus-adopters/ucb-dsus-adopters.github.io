@@ -8,6 +8,10 @@ infrastructure developed by UC Berkeley and partner institutions. Built with
 
 ```bash
 pip install -r requirements.txt
+
+# Build the embedded Canvas JupyterHub rewriter (required for the Canvas Rewriter tab)
+cd canvas-jupyterhub-rewriter && npm ci && npm run build && cd ..
+
 mkdocs serve          # live preview at http://127.0.0.1:8000
 mkdocs build --strict # fail on broken links / missing includes
 ```
@@ -17,6 +21,10 @@ mkdocs build --strict # fail on broken links / missing includes
 - `docs/`: site content.
 - `docs/_shared/`: canonical instruction blocks (single source of truth), pulled into
   pages with `{% include %}`. Not rendered as standalone pages.
+- `canvas-jupyterhub-rewriter/`: source for the browser-based Canvas link rewriter
+  ([ds-modules/canvas-jupyterhub-rewriter](https://github.com/ds-modules/canvas-jupyterhub-rewriter)).
+  Built during deploy; the script is copied into the site output via `main.py` and loaded
+  directly on the Canvas Rewriter page.
 - `main.py`: `mkdocs-macros` module defining per-course variables (repos, hub, otter
   version, interest form) that drive the shared blocks.
 - Licensing is **per-course**, stated directly on each course page, never shared.

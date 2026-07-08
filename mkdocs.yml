@@ -11,7 +11,7 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   custom_dir: overrides
-  logo: assets/dsus_logo.png
+  logo: assets/ds_logo.png
   favicon: assets/favicon.ico
   font:
     text: Source Sans 3
@@ -103,4 +103,5 @@ nav:
       - FAQ: resources/faq.md
       - Glossary: resources/glossary.md
       - Changelog: resources/changelog.md
+  - Canvas Rewriter: tools/canvas-rewriter.md
   - Contact: contact.md

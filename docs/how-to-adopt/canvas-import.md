@@ -16,7 +16,7 @@ Download the common-cartridge (`.imscc`) template linked from your course page.
 
 By default the template links assignments to `datahub.berkeley.edu`. If your institution
 uses a different JupyterHub, run the template through the
-[Canvas JupyterHub rewriter](https://ds-modules.github.io/canvas-jupyterhub-rewriter/) to
+[Canvas JupyterHub rewriter](../tools/canvas-rewriter.md) to
 rewrite the hub URL and your **forked** materials repository **before** importing. Fork
 the student materials repo on your course page first, then enter that fork URL in the
 rewriter.

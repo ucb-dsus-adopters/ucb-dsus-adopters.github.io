@@ -2,6 +2,12 @@
 
 A record of notable changes to this adoption site.
 
+## 2026-07
+
+- **Canvas JupyterHub Rewriter** added as its own top-level tab, embedding the
+  [browser-based tool](https://github.com/ds-modules/canvas-jupyterhub-rewriter) for
+  rewriting hub and materials-repo links in Canvas exports before import.
+
 ## 2026-06
 
 - **New site launched.** Migrated from the previous MyST site to MkDocs Material under the

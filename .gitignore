@@ -3,3 +3,6 @@ site/
 *.pyc
 __pycache__/
 .env
+
+canvas-jupyterhub-rewriter/node_modules/
+canvas-jupyterhub-rewriter/dist/
