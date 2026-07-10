@@ -6,7 +6,7 @@ the fastest way to stand up the course.
 
 The steps below are the standardized flow. For the **exact Canvas template download and
 materials repo to fork**, open your course page ([Data 8](../courses/data8.md) or
-[Data 6](../courses/data6.md)), where these same steps render with your course's values.
+[Data 6](../courses/data6/index.md)), where these same steps render with your course's values.
 
 ## 1. Download the Canvas template
 

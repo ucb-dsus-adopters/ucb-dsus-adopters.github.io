@@ -1,6 +1,6 @@
 {% set c = courses.data6 %}
 <div class="course-hero course-hero--data6" markdown>
-![Data 6](../assets/data6_logo.png){ .hero-logo }
+![Data 6](../../assets/data6_logo.png){ .hero-logo }
 # Data 6: Computational Thinking with Data Science and Society
 </div>
 
@@ -83,7 +83,7 @@ each topic but should be supplemented with foundational texts linked within the 
 The Data 6 course notes are licensed under
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC-BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 Under ShareAlike, if you adapt the notes you must release your version under the same
-license. See [Understanding Licenses](../how-to-adopt/licenses.md) for how to read these
+license. See [Understanding Licenses](../../how-to-adopt/licenses.md) for how to read these
 terms.
 
 ## Acknowledgments
@@ -97,4 +97,4 @@ Learning Lab. Learn more about the DUBOIS project at
 
 ## Need help?
 
-Email [{{ support_email }}](mailto:{{ support_email }}) or see [Support](../how-to-adopt/support.md).
+Email [{{ support_email }}](mailto:{{ support_email }}) or see [Support](../../how-to-adopt/support.md).

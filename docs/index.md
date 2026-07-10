@@ -24,7 +24,7 @@ provision a hub independently of curriculum adoption.
     Interdisciplinary introduction with course notes and grading infrastructure. Full
     adoption package.
 
-    [:octicons-arrow-right-24: Adopt Data 6](courses/data6.md)
+    [:octicons-arrow-right-24: Adopt Data 6](courses/data6/index.md)
 
 -   ![Data 8](assets/data8logo.png){ .card-logo } **Data 8: Foundations of Data Science**
 

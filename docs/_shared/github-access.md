@@ -7,7 +7,7 @@
    grading.
 3. **Grade automatically:** Log into the grader at
    [{{ grader_url }}]({{ grader_url }}) with your GitHub username and grade the
-   submissions (see [Otter Autograding](../how-to-adopt/autograding.md)).
+   submissions (see [Otter Autograding](/how-to-adopt/autograding/)).
 4. **Import grades:** Upload the CSV file with grades back to Canvas.
 
 !!! warning "Please do not distribute solutions"

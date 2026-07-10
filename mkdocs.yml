@@ -33,7 +33,6 @@ theme:
         name: Switch to light mode
   features:
     - navigation.tabs
-    - navigation.sections
     - navigation.top
     - navigation.footer
     - content.code.copy
@@ -91,7 +90,9 @@ nav:
       - Support: how-to-adopt/support.md
   - Courses:
       - Overview: courses/index.md
-      - Data 6: courses/data6.md
+      - "Data 6":
+          - Adoption guide: courses/data6/index.md
+          - test: courses/data6/test.md
       - Data 8: courses/data8.md
       - Data 100: courses/data100.md
       - ECC CSCI 9: courses/csci9.md

@@ -50,7 +50,7 @@ When you adopt a course you can expect:
 
     The steps below are for full course adoption. For the exact repository URLs, Canvas
     template, license, and grader settings, open your course page:
-    [Data 6](../courses/data6.md) · [Data 8](../courses/data8.md) ·
+    [Data 6](../courses/data6/index.md) · [Data 8](../courses/data8.md) ·
     [Data 100](../courses/data100.md) · [ECC CSCI 9](../courses/csci9.md).
     For modules, see [Cal-ICOR](../modules/cal-icor.md) ·
     [Data Science Modules](../modules/ds-modules.md).

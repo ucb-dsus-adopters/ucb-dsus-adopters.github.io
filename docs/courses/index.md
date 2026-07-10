@@ -14,7 +14,7 @@ course-specific notes.
 
 <div class="grid cards cards-2x2" markdown>
 
--   ![Data 6](../assets/data6_logo.png){ .card-logo } **[Data 6: Computational Thinking with Data Science and Society](data6.md)**
+-   ![Data 6](../assets/data6_logo.png){ .card-logo } **[Data 6: Computational Thinking with Data Science and Society](data6/index.md)**
 
     ---
 
