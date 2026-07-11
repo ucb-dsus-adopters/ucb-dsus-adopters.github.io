@@ -5,7 +5,7 @@ assignment links, embedded reading quizzes, and gradebook already set up. Import
 the fastest way to stand up the course.
 
 The steps below are the standardized flow. For the **exact Canvas template download and
-materials repo to fork**, open your course page ([Data 8](../courses/data8.md) or
+materials repo to fork**, open your course page ([Data 8](../courses/data8/index.md) or
 [Data 6](../courses/data6.md)), where these same steps render with your course's values.
 
 ## 1. Download the Canvas template

@@ -20,7 +20,7 @@ course-specific notes.
 
     Full adoption package. Interdisciplinary introduction with course notes and grading infrastructure.
 
--   ![Data 8](../assets/data8logo.png){ .card-logo } **[Data 8: Foundations of Data Science](data8.md)**
+-   ![Data 8](../assets/data8logo.png){ .card-logo } **[Data 8: Foundations of Data Science](data8/index.md)**
 
     ---
 
