@@ -707,7 +707,7 @@
 }
 
 .inspired-map-leaflet-popup .leaflet-popup-content {
-  margin: 0.75rem 1rem;
+  margin: 1rem 1rem 0.75rem;
   line-height: 1.4;
   width: 200px !important;
 }
@@ -718,6 +718,7 @@
   align-items: stretch;
   gap: 0.5rem;
   text-align: center;
+  padding-top: 0.35rem;
 }
 
 .inspired-map-popup-logo-wrap {
