@@ -2,7 +2,7 @@
   {
     "id": "ucsd",
     "name": "UC San Diego (UCSD)",
-    "url": "https://ucsd.edu",
+    "url": "https://dsc10.com/",
     "lat": 32.8792,
     "lng": -117.2311,
     "logo": "assets/logos/inspired/ucsd.png"
@@ -10,7 +10,7 @@
   {
     "id": "cornell",
     "name": "Cornell University",
-    "url": "https://www.cornell.edu",
+    "url": "https://classes.cornell.edu/browse/roster/SP22/class/CS/1380",
     "lat": 42.4529,
     "lng": -76.4801,
     "logo": "assets/logos/inspired/cornell.png"
@@ -18,7 +18,7 @@
   {
     "id": "barnard",
     "name": "Barnard College",
-    "url": "https://barnard.edu",
+    "url": "https://bc-coms-1016.github.io/",
     "lat": 40.8095,
     "lng": -73.9636,
     "logo": "assets/logos/inspired/barnard.png"
@@ -26,7 +26,7 @@
   {
     "id": "birmingham",
     "name": "University of Birmingham",
-    "url": "https://www.birmingham.ac.uk",
+    "url": "https://matthew-brett.github.io/cfd2020/intro.html",
     "lat": 52.4504,
     "lng": -1.932,
     "logo": "assets/logos/inspired/birmingham.png"
@@ -34,7 +34,7 @@
   {
     "id": "uiuc",
     "name": "University of Illinois at Urbana-Champaign",
-    "url": "https://illinois.edu",
+    "url": "http://courses.las.illinois.edu/fall2019/stat107/",
     "lat": 40.0762,
     "lng": -88.2233,
     "logo": "assets/logos/inspired/uiuc.png"
@@ -42,7 +42,7 @@
   {
     "id": "aup",
     "name": "American University of Paris",
-    "url": "https://www.aup.edu",
+    "url": "https://github.com/AUP-CS2091/Syllabus",
     "lat": 48.8616,
     "lng": 2.3107,
     "logo": "assets/logos/inspired/aup.png"
@@ -50,7 +50,7 @@
   {
     "id": "wheaton",
     "name": "Wheaton College",
-    "url": "https://www.wheatoncollege.edu",
+    "url": "https://math-121-spring-21.github.io/",
     "lat": 41.9671,
     "lng": -71.1831,
     "logo": "assets/logos/inspired/wheaton.png"
@@ -122,7 +122,7 @@
   {
     "id": "usna",
     "name": "United States Naval Academy",
-    "url": "https://www.usna.edu",
+    "url": "https://sites.google.com/usna.edu/ds4dm-spring-2021/home",
     "lat": 38.9816,
     "lng": -76.4832,
     "logo": "assets/logos/inspired/usna.png"
@@ -138,7 +138,7 @@
   {
     "id": "vassar",
     "name": "Vassar College",
-    "url": "https://www.vassar.edu",
+    "url": "https://data144.cs.vassar.edu/",
     "lat": 41.6868,
     "lng": -73.8957,
     "logo": "assets/logos/inspired/vassar.png"
@@ -146,7 +146,7 @@
   {
     "id": "catawba",
     "name": "Catawba College",
-    "url": "https://catawba.edu",
+    "url": "https://github.com/catawba-data-mining/CIS-3902-Data-Mining",
     "lat": 35.6916,
     "lng": -80.486,
     "logo": "assets/logos/inspired/catawba.png"
@@ -154,7 +154,7 @@
   {
     "id": "mcgill",
     "name": "McGill University",
-    "url": "https://www.mcgill.ca",
+    "url": "https://github.com/catawba-data-mining/CIS-3902-Data-Mining",
     "lat": 45.5069,
     "lng": -73.5787,
     "logo": "assets/logos/inspired/mcgill.png"

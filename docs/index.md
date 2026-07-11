@@ -33,7 +33,7 @@ provision a hub independently of curriculum adoption.
     Inference, computing, and statistics for first-year students. Full adoption package
     with two versions.
 
-    [:octicons-arrow-right-24: Adopt Data 8](courses/data8/index.md)
+    [:octicons-arrow-right-24: Adopt Data 8](courses/data8/adoption.md)
 
 -   ![Data 100](assets/data100_logo.png){ .card-logo } **Data 100: Principles and Techniques of Data Science**
 

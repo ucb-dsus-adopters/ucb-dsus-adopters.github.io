@@ -23,5 +23,5 @@ the institution logo and website.
 ## Adopt Data 8 at your institution
 
 Interested in offering a Data 8–inspired course? Start with the
-[Data 8 adoption package](index.md), or complete the
+[Data 8 adoption package](adoption.md), or complete the
 [Data 8 Instructor Interest Form]({{ c.interest_form }}).
