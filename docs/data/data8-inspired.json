@@ -5,7 +5,9 @@
     "url": "https://dsc10.com/",
     "lat": 32.8792,
     "lng": -117.2311,
-    "logo": "assets/logos/inspired/ucsd.png"
+    "logo": "assets/logos/inspired/ucsd.png",
+    "location": "La Jolla, CA",
+    "type": "UC / CSU"
   },
   {
     "id": "cornell",
@@ -13,7 +15,9 @@
     "url": "https://classes.cornell.edu/browse/roster/SP22/class/CS/1380",
     "lat": 42.4529,
     "lng": -76.4801,
-    "logo": "assets/logos/inspired/cornell.png"
+    "logo": "assets/logos/inspired/cornell.png",
+    "location": "Ithaca, NY",
+    "type": "Private"
   },
   {
     "id": "barnard",
@@ -21,7 +25,9 @@
     "url": "https://bc-coms-1016.github.io/",
     "lat": 40.8095,
     "lng": -73.9636,
-    "logo": "assets/logos/inspired/barnard.png"
+    "logo": "assets/logos/inspired/barnard.png",
+    "location": "New York, NY",
+    "type": "Private"
   },
   {
     "id": "birmingham",
@@ -29,7 +35,9 @@
     "url": "https://matthew-brett.github.io/cfd2020/intro.html",
     "lat": 52.4504,
     "lng": -1.932,
-    "logo": "assets/logos/inspired/birmingham.png"
+    "logo": "assets/logos/inspired/birmingham.png",
+    "location": "Birmingham, UK",
+    "type": "International"
   },
   {
     "id": "uiuc",
@@ -37,7 +45,9 @@
     "url": "http://courses.las.illinois.edu/fall2019/stat107/",
     "lat": 40.0762,
     "lng": -88.2233,
-    "logo": "assets/logos/inspired/uiuc.png"
+    "logo": "assets/logos/inspired/uiuc.png",
+    "location": "Urbana-Champaign, IL",
+    "type": "Public university"
   },
   {
     "id": "aup",
@@ -45,7 +55,9 @@
     "url": "https://github.com/AUP-CS2091/Syllabus",
     "lat": 48.8616,
     "lng": 2.3107,
-    "logo": "assets/logos/inspired/aup.png"
+    "logo": "assets/logos/inspired/aup.png",
+    "location": "Paris, France",
+    "type": "International"
   },
   {
     "id": "wheaton",
@@ -53,7 +65,9 @@
     "url": "https://math-121-spring-21.github.io/",
     "lat": 41.9671,
     "lng": -71.1831,
-    "logo": "assets/logos/inspired/wheaton.png"
+    "logo": "assets/logos/inspired/wheaton.png",
+    "location": "Norton, MA",
+    "type": "Private"
   },
   {
     "id": "umbc",
@@ -61,7 +75,9 @@
     "url": "https://umbc.edu",
     "lat": 39.2524,
     "lng": -76.7089,
-    "logo": "assets/logos/inspired/umbc.png"
+    "logo": "assets/logos/inspired/umbc.png",
+    "location": "Baltimore, MD",
+    "type": "Public university"
   },
   {
     "id": "de-anza",
@@ -69,7 +85,9 @@
     "url": "https://www.deanza.edu",
     "lat": 37.3177,
     "lng": -122.0446,
-    "logo": "assets/logos/inspired/de-anza.png"
+    "logo": "assets/logos/inspired/de-anza.png",
+    "location": "Cupertino, CA",
+    "type": "Community college"
   },
   {
     "id": "ollu",
@@ -77,7 +95,9 @@
     "url": "https://www.ollusa.edu",
     "lat": 29.427,
     "lng": -98.5435,
-    "logo": "assets/logos/inspired/ollu.jpg"
+    "logo": "assets/logos/inspired/ollu.jpg",
+    "location": "San Antonio, TX",
+    "type": "Private"
   },
   {
     "id": "avc",
@@ -85,7 +105,9 @@
     "url": "https://www.avc.edu",
     "lat": 34.6789,
     "lng": -118.1881,
-    "logo": "assets/logos/inspired/avc.png"
+    "logo": "assets/logos/inspired/avc.png",
+    "location": "Lancaster, CA",
+    "type": "Community college"
   },
   {
     "id": "aacc",
@@ -93,7 +115,9 @@
     "url": "https://www.aacc.edu",
     "lat": 39.05,
     "lng": -76.5127,
-    "logo": "assets/logos/inspired/aacc.png"
+    "logo": "assets/logos/inspired/aacc.png",
+    "location": "Arnold, MD",
+    "type": "Community college"
   },
   {
     "id": "el-camino",
@@ -101,7 +125,9 @@
     "url": "https://www.elcamino.edu",
     "lat": 33.8838,
     "lng": -118.3303,
-    "logo": "assets/logos/inspired/el-camino.png"
+    "logo": "assets/logos/inspired/el-camino.png",
+    "location": "Torrance, CA",
+    "type": "Community college"
   },
   {
     "id": "ncssm",
@@ -109,7 +135,9 @@
     "url": "https://www.ncssm.edu",
     "lat": 36.0194,
     "lng": -78.9207,
-    "logo": "assets/logos/inspired/ncssm.png"
+    "logo": "assets/logos/inspired/ncssm.png",
+    "location": "Durham, NC",
+    "type": "K-12"
   },
   {
     "id": "ucsb",
@@ -117,7 +145,9 @@
     "url": "https://www.ucsb.edu",
     "lat": 34.4146,
     "lng": -119.8458,
-    "logo": "assets/logos/inspired/ucsb.png"
+    "logo": "assets/logos/inspired/ucsb.png",
+    "location": "Santa Barbara, CA",
+    "type": "UC / CSU"
   },
   {
     "id": "usna",
@@ -125,7 +155,9 @@
     "url": "https://sites.google.com/usna.edu/ds4dm-spring-2021/home",
     "lat": 38.9816,
     "lng": -76.4832,
-    "logo": "assets/logos/inspired/usna.png"
+    "logo": "assets/logos/inspired/usna.png",
+    "location": "Annapolis, MD",
+    "type": "Public university"
   },
   {
     "id": "vcu",
@@ -133,7 +165,9 @@
     "url": "https://www.vcu.edu",
     "lat": 37.5461,
     "lng": -77.4541,
-    "logo": "assets/logos/inspired/vcu.png"
+    "logo": "assets/logos/inspired/vcu.png",
+    "location": "Richmond, VA",
+    "type": "Public university"
   },
   {
     "id": "vassar",
@@ -141,7 +175,9 @@
     "url": "https://data144.cs.vassar.edu/",
     "lat": 41.6868,
     "lng": -73.8957,
-    "logo": "assets/logos/inspired/vassar.png"
+    "logo": "assets/logos/inspired/vassar.png",
+    "location": "Poughkeepsie, NY",
+    "type": "Private"
   },
   {
     "id": "catawba",
@@ -149,7 +185,9 @@
     "url": "https://github.com/catawba-data-mining/CIS-3902-Data-Mining",
     "lat": 35.6916,
     "lng": -80.486,
-    "logo": "assets/logos/inspired/catawba.png"
+    "logo": "assets/logos/inspired/catawba.png",
+    "location": "Salisbury, NC",
+    "type": "Private"
   },
   {
     "id": "mcgill",
@@ -157,7 +195,9 @@
     "url": "https://github.com/catawba-data-mining/CIS-3902-Data-Mining",
     "lat": 45.5069,
     "lng": -73.5787,
-    "logo": "assets/logos/inspired/mcgill.png"
+    "logo": "assets/logos/inspired/mcgill.png",
+    "location": "Montreal, Canada",
+    "type": "International"
   },
   {
     "id": "ung",
@@ -165,7 +205,9 @@
     "url": "https://ung.edu",
     "lat": 34.5279,
     "lng": -83.9845,
-    "logo": "assets/logos/inspired/ung.png"
+    "logo": "assets/logos/inspired/ung.png",
+    "location": "Dahlonega, GA",
+    "type": "Public university"
   },
   {
     "id": "lcmc",
@@ -173,7 +215,9 @@
     "url": "https://www.thelcmc.org",
     "lat": 41.8984,
     "lng": -84.0602,
-    "logo": "assets/logos/inspired/lcmc.png"
+    "logo": "assets/logos/inspired/lcmc.png",
+    "location": "United States",
+    "type": "Consortium"
   },
   {
     "id": "uea",
@@ -181,7 +225,9 @@
     "url": "https://www.uea.ac.uk",
     "lat": 52.6181,
     "lng": 1.2382,
-    "logo": "assets/logos/inspired/uea.png"
+    "logo": "assets/logos/inspired/uea.png",
+    "location": "Norwich, UK",
+    "type": "International"
   },
   {
     "id": "ramapo",
@@ -189,7 +235,9 @@
     "url": "https://www.ramapo.edu",
     "lat": 41.0822,
     "lng": -74.1738,
-    "logo": "assets/logos/inspired/ramapo.png"
+    "logo": "assets/logos/inspired/ramapo.png",
+    "location": "Mahwah, NJ",
+    "type": "Public university"
   },
   {
     "id": "sabudh",
@@ -197,7 +245,9 @@
     "url": "https://sabudh.org",
     "lat": 30.7046,
     "lng": 76.7179,
-    "logo": "assets/logos/inspired/sabudh.png"
+    "logo": "assets/logos/inspired/sabudh.png",
+    "location": "Punjab, India",
+    "type": "NGO"
   },
   {
     "id": "csm",
@@ -205,7 +255,9 @@
     "url": "https://www.csmd.edu",
     "lat": 38.559,
     "lng": -77.0107,
-    "logo": "assets/logos/inspired/csm.png"
+    "logo": "assets/logos/inspired/csm.png",
+    "location": "La Plata, MD",
+    "type": "Community college"
   },
   {
     "id": "ccsf",
@@ -213,7 +265,9 @@
     "url": "https://www.ccsf.edu",
     "lat": 37.723,
     "lng": -122.4512,
-    "logo": "assets/logos/inspired/ccsf.png"
+    "logo": "assets/logos/inspired/ccsf.png",
+    "location": "San Francisco, CA",
+    "type": "Community college"
   },
   {
     "id": "cabrillo-ms",
@@ -221,7 +275,9 @@
     "url": "https://www.venturausd.org/cabrillo",
     "lat": 34.2779,
     "lng": -119.2799,
-    "logo": "assets/logos/inspired/cabrillo-ms.png"
+    "logo": "assets/logos/inspired/cabrillo-ms.png",
+    "location": "Ventura, CA",
+    "type": "K-12"
   },
   {
     "id": "stellenbosch",
@@ -229,7 +285,9 @@
     "url": "https://www.sun.ac.za",
     "lat": -33.9326,
     "lng": 18.8651,
-    "logo": "assets/logos/inspired/stellenbosch.png"
+    "logo": "assets/logos/inspired/stellenbosch.png",
+    "location": "Stellenbosch, South Africa",
+    "type": "International"
   },
   {
     "id": "sastra",
@@ -237,7 +295,9 @@
     "url": "https://www.sastra.edu",
     "lat": 10.9629,
     "lng": 79.3853,
-    "logo": "assets/logos/inspired/sastra.png"
+    "logo": "assets/logos/inspired/sastra.png",
+    "location": "Thanjavur, India",
+    "type": "International"
   },
   {
     "id": "sbcc",
@@ -245,7 +305,9 @@
     "url": "https://www.sbcc.edu",
     "lat": 34.4059,
     "lng": -119.6974,
-    "logo": "assets/logos/inspired/sbcc.png"
+    "logo": "assets/logos/inspired/sbcc.png",
+    "location": "Santa Barbara, CA",
+    "type": "Community college"
   },
   {
     "id": "west-valley",
@@ -253,7 +315,9 @@
     "url": "https://www.westvalley.edu",
     "lat": 37.2638,
     "lng": -122.0097,
-    "logo": "assets/logos/inspired/west-valley.png"
+    "logo": "assets/logos/inspired/west-valley.png",
+    "location": "Saratoga, CA",
+    "type": "Community college"
   },
   {
     "id": "coppin",
@@ -261,6 +325,8 @@
     "url": "https://www.coppin.edu",
     "lat": 39.3111,
     "lng": -76.6585,
-    "logo": "assets/logos/inspired/coppin.png"
+    "logo": "assets/logos/inspired/coppin.png",
+    "location": "Baltimore, MD",
+    "type": "Public university"
   }
 ]
