@@ -33,7 +33,7 @@ theme:
         name: Switch to light mode
   features:
     - navigation.tabs
-    - navigation.sections
+    - navigation.indexes
     - navigation.top
     - navigation.footer
     - content.code.copy
@@ -44,6 +44,9 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/inspired-map.js
 
 plugins:
   - search
@@ -92,7 +95,9 @@ nav:
   - Courses:
       - Overview: courses/index.md
       - Data 6: courses/data6.md
-      - Data 8: courses/data8.md
+      - Data 8:
+          - Adoption: courses/data8/adoption.md
+          - Inspired Curriculum: courses/data8/inspired.md
       - Data 100: courses/data100.md
       - ECC CSCI 9: courses/csci9.md
   - Modules:

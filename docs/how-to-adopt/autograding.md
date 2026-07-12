@@ -5,7 +5,7 @@ You have three ways to grade them; the **Otter Service Standalone** web service 
 easiest place to start.
 
 For the exact private solutions repository and any pinned otter-grader version, see your
-course page, [Data 8](../courses/data8.md) or [Data 6](../courses/data6.md).
+course page, [Data 8](../courses/data8/adoption.md) or [Data 6](../courses/data6.md).
 
 ## Option 1: Otter Service Standalone (recommended)
 

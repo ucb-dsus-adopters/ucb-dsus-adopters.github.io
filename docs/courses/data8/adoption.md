@@ -1,6 +1,6 @@
 {% set c = courses.data8 %}
 <div class="course-hero course-hero--data8" markdown>
-![Data 8](../assets/data8logo.png){ .hero-logo }
+![Data 8](../../assets/data8logo.png){ .hero-logo }
 # Data 8: Foundations of Data Science
 </div>
 
@@ -15,6 +15,7 @@ used at Berkeley is available to adopt.
   syllabus, lectures, course staff, and context for running Data 8
 - Browse notebooks in your browser: [{{ c.title }} xeus-lite]({{ c.xeus_lite }})
 - Public student materials: [{{ c.materials_repo_name }}]({{ c.materials_repo }})
+- Institutions using Data 8: [Data 8 Inspired Curriculum](inspired.md)
 
 !!! tip "Quick start"
 
@@ -98,7 +99,7 @@ you adapt or redistribute:
 - **Private course materials** (exams and answers) are kept private to protect course
   integrity; request access via the [instructor interest form]({{ c.interest_form }}).
 
-See [Understanding Licenses](../how-to-adopt/licenses.md) for how to read these terms.
+See [Understanding Licenses](../../how-to-adopt/licenses.md) for how to read these terms.
 
 ## Explore the materials in your browser
 
@@ -106,4 +107,4 @@ See [Understanding Licenses](../how-to-adopt/licenses.md) for how to read these 
 
 ## Need help?
 
-Email [{{ support_email }}](mailto:{{ support_email }}) or see [Support](../how-to-adopt/support.md).
+Email [{{ support_email }}](mailto:{{ support_email }}) or see [Support](../../how-to-adopt/support.md).
