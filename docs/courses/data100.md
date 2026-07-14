@@ -17,6 +17,9 @@ and machine learning.
 ## Materials
 
 - Course site: [ds100.org](https://ds100.org)
+- Course notes: [ds100.org/course-notes](https://ds100.org/course-notes/)
+- Optional supplementary textbook:
+  [Learning Data Science](https://learningds.org/intro.html)
 - **Public student materials:**
   [{{ c.materials_repo_name }}]({{ c.materials_repo }})
 - **Private instructor repo** (solutions and instructor materials):
