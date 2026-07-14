@@ -12,14 +12,6 @@ to a server.
     - Click **Scan & Preview** to see how links will change
     - Click **Rewrite & Download**, then import the updated file into Canvas
 
-!!! note "Use your fork, not the upstream repo"
-
-    The rewriter updates assignment links to point at **your** JupyterHub and **your fork**
-    of the student materials. Fork the course's public materials repo on GitHub first, then
-    paste that fork URL into **New Repo URL**. See your
-    [course adoption page](../courses/index.md) for the repo to fork. A video walkthrough is
-    below the tool.
-
 <div class="canvas-rewriter" markdown="0">
   <div class="rewriter-section">
     <label for="file">Choose .imscc / .zip file
