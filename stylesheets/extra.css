@@ -33,6 +33,14 @@
   --md-typeset-a-color: #6fa8cc;
 }
 
+/* Body copy. Material's default is 0.8rem (16px); nudge to 17px for
+   readability. Headings are em-sized and tables are deliberately smaller
+   (0.64rem), so both are left alone. `:where()` keeps this at zero
+   specificity so component rules below still win over it. */
+:where(.md-typeset) :where(p, li, dd) {
+  font-size: 0.85rem;
+}
+
 /* Full-viewport home hero. Fills the screen below the header, with centered
    text and a scroll-down indicator. Content scrolls up over it. */
 .home-hero {
