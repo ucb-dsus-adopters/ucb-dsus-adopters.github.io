@@ -6,6 +6,10 @@
   --ucb-blue: #003262;
   --ucb-gold: #FDB515;
   --ucb-founders-rock: #3B7EA1;
+  /* Darker Founder's Rock for text/links on white: #3B7EA1 is 4.48:1
+     (fails WCAG AA's 4.5:1); this variant is ~5.4:1. Keep the original
+     for decorative gradients only. */
+  --ucb-founders-rock-dark: #34718F;
 }
 
 /* Light scheme */
@@ -16,10 +20,10 @@
   --md-primary-bg-color: #ffffff;
   --md-primary-bg-color--light: #ffffffb3;
 
-  --md-accent-fg-color: var(--ucb-founders-rock);
+  --md-accent-fg-color: var(--ucb-founders-rock-dark);
   --md-accent-fg-color--transparent: #3b7ea11a;
 
-  --md-typeset-a-color: var(--ucb-founders-rock);
+  --md-typeset-a-color: var(--ucb-founders-rock-dark);
 }
 
 /* Dark scheme: keep Berkeley Blue in the header but lift link/accent colors
@@ -31,6 +35,30 @@
 
   --md-accent-fg-color: var(--ucb-gold);
   --md-typeset-a-color: #6fa8cc;
+}
+
+/* Footer copyright ("Made with Material for MkDocs"). Material's default is
+   45%-opacity white, which computes to ~4.47:1 on the near-black footer —
+   just under WCAG AA's 4.5:1. 55% opacity yields ~6.1:1. Applies to both
+   color schemes since the footer is dark in each. */
+[data-md-color-scheme="default"],
+[data-md-color-scheme="slate"] {
+  --md-footer-fg-color--lighter: hsla(0, 0%, 100%, 0.55);
+}
+
+/* Links inside running text must be distinguishable without relying on
+   color alone (WCAG 1.4.1 / axe "link-in-text-block"), so underline them.
+   Buttons, card grids, and icon-only links (e.g. contact-page socials) are
+   visually distinct already and stay underline-free. */
+.md-typeset :is(p, li, dd, td, blockquote) a:not(.md-button),
+.md-copyright a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.md-typeset .grid.cards a,
+.md-typeset .team-member a {
+  text-decoration: none;
 }
 
 /* Body copy. Material's default is 0.8rem (16px); nudge to 17px for
@@ -581,7 +609,7 @@
 .md-typeset .team-member a {
   font-size: 1.35rem;
   margin: 0 0.3rem;
-  color: var(--ucb-founders-rock);
+  color: var(--ucb-founders-rock-dark);
 }
 
 /* Data 8 Inspired Curriculum explorer (list + Leaflet map) */
