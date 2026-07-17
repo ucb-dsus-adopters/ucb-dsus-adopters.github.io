@@ -98,6 +98,38 @@ nav:
       - Data 8:
           - Adoption: courses/data8/adoption.md
           - Inspired Curriculum: courses/data8/inspired.md
+          - Pedagogy Guide: courses/data8/pedagogy.md
+          - Syllabus & Lectures:
+              - Overview: courses/data8/syllabus/index.md
+              - Inspiration: courses/data8/syllabus/inspiration.md
+              - Course Structure: courses/data8/syllabus/course-structure.md
+              - Slides & Lecture Videos: courses/data8/syllabus/slides.md
+          - Textbook: courses/data8/textbook.md
+          - The datascience Package: courses/data8/datascience.md
+          - Course Staff:
+              - Structure: courses/data8/staff/index.md
+              - Roles & Responsibilities: courses/data8/staff/roles.md
+          - Notebook Platforms: courses/data8/notebook-platforms.md
+          - Authoring Notebooks:
+              - Overview: courses/data8/authoring/index.md
+              - Minor Changes: courses/data8/authoring/minor-changes.md
+              - From Scratch: courses/data8/authoring/from-scratch.md
+          - Grading:
+              - Overview: courses/data8/grading/index.md
+              - Otter Service Standalone: courses/data8/grading/otter-service-standalone.md
+              - GradeScope: courses/data8/grading/gradescope.md
+              - Grading Locally: courses/data8/grading/local.md
+          - Jupyter Notebook Assignments:
+              - Overview: courses/data8/jupyter/index.md
+              - Assignments: courses/data8/jupyter/assignments.md
+              - Distributing Notebooks: courses/data8/jupyter/distribution.md
+              - Creating Assignments: courses/data8/jupyter/making-assignments.md
+          - Labs & Discussions:
+              - Overview: courses/data8/labs/index.md
+              - Lab Sections: courses/data8/labs/lab-sections.md
+              - Tutors & Office Hours: courses/data8/labs/tutors.md
+          - Connectors & Modules: courses/data8/connectors-modules.md
+          - Useful Links: courses/data8/useful-links.md
       - Data 100: courses/data100.md
       - ECC CSCI 9: courses/csci9.md
   - Modules:
