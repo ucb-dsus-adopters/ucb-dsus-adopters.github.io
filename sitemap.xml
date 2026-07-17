@@ -2,94 +2,198 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ucb-dsus-adopters.github.io/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-17</lastmod>
     </url>
     <url>
          <loc>https://ucb-dsus-adopters.github.io/about/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-17</lastmod>
     </url>
     <url>
          <loc>https://ucb-dsus-adopters.github.io/contact/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-17</lastmod>
     </url>
     <url>
          <loc>https://ucb-dsus-adopters.github.io/courses/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-17</lastmod>
     </url>
     <url>
          <loc>https://ucb-dsus-adopters.github.io/courses/csci9/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-17</lastmod>
     </url>
     <url>
          <loc>https://ucb-dsus-adopters.github.io/courses/data100/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-17</lastmod>
     </url>
     <url>
          <loc>https://ucb-dsus-adopters.github.io/courses/data6/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-17</lastmod>
     </url>
     <url>
          <loc>https://ucb-dsus-adopters.github.io/courses/data8/adoption/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/connectors-modules/</loc>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/datascience/</loc>
+         <lastmod>2026-07-17</lastmod>
     </url>
     <url>
          <loc>https://ucb-dsus-adopters.github.io/courses/data8/inspired/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/notebook-platforms/</loc>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/pedagogy/</loc>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/textbook/</loc>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/useful-links/</loc>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/authoring/</loc>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/authoring/from-scratch/</loc>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/authoring/minor-changes/</loc>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/grading/</loc>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/grading/gradescope/</loc>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/grading/local/</loc>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/grading/otter-service-standalone/</loc>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/jupyter/</loc>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/jupyter/assignments/</loc>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/jupyter/distribution/</loc>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/jupyter/making-assignments/</loc>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/labs/</loc>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/labs/lab-sections/</loc>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/labs/tutors/</loc>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/staff/</loc>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/staff/roles/</loc>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/syllabus/</loc>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/syllabus/course-structure/</loc>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/syllabus/inspiration/</loc>
+         <lastmod>2026-07-17</lastmod>
+    </url>
+    <url>
+         <loc>https://ucb-dsus-adopters.github.io/courses/data8/syllabus/slides/</loc>
+         <lastmod>2026-07-17</lastmod>
     </url>
     <url>
          <loc>https://ucb-dsus-adopters.github.io/how-to-adopt/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-17</lastmod>
     </url>
     <url>
          <loc>https://ucb-dsus-adopters.github.io/how-to-adopt/adapting-content/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-17</lastmod>
     </url>
     <url>
          <loc>https://ucb-dsus-adopters.github.io/how-to-adopt/autograding/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-17</lastmod>
     </url>
     <url>
          <loc>https://ucb-dsus-adopters.github.io/how-to-adopt/canvas-import/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-17</lastmod>
     </url>
     <url>
          <loc>https://ucb-dsus-adopters.github.io/how-to-adopt/infrastructure/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-17</lastmod>
     </url>
     <url>
          <loc>https://ucb-dsus-adopters.github.io/how-to-adopt/licenses/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-17</lastmod>
     </url>
     <url>
          <loc>https://ucb-dsus-adopters.github.io/how-to-adopt/support/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-17</lastmod>
     </url>
     <url>
          <loc>https://ucb-dsus-adopters.github.io/modules/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-17</lastmod>
     </url>
     <url>
          <loc>https://ucb-dsus-adopters.github.io/modules/cal-icor/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-17</lastmod>
     </url>
     <url>
          <loc>https://ucb-dsus-adopters.github.io/modules/ds-modules/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-17</lastmod>
     </url>
     <url>
          <loc>https://ucb-dsus-adopters.github.io/resources/changelog/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-17</lastmod>
     </url>
     <url>
          <loc>https://ucb-dsus-adopters.github.io/resources/faq/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-17</lastmod>
     </url>
     <url>
          <loc>https://ucb-dsus-adopters.github.io/resources/glossary/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-17</lastmod>
     </url>
     <url>
          <loc>https://ucb-dsus-adopters.github.io/tools/canvas-rewriter/</loc>
-         <lastmod>2026-07-14</lastmod>
+         <lastmod>2026-07-17</lastmod>
     </url>
 </urlset>
