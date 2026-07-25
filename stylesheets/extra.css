@@ -24,6 +24,15 @@
   --md-accent-fg-color--transparent: #3b7ea11a;
 
   --md-typeset-a-color: var(--ucb-founders-rock-dark);
+
+  /* Code-block syntax colors for comments/docstrings/operator words default
+     to rgba(0,0,0,0.54), which is only 4.47:1 on the #f5f5f5 code background
+     (fails WCAG AA). This solid gray is ~5.7:1. */
+  --md-code-hl-comment-color: #616161;
+  --md-code-hl-generic-color: #616161;
+  --md-code-hl-variable-color: #616161;
+  --md-code-hl-operator-color: #616161;
+  --md-code-hl-punctuation-color: #616161;
 }
 
 /* Dark scheme: keep Berkeley Blue in the header but lift link/accent colors
@@ -35,6 +44,11 @@
 
   --md-accent-fg-color: var(--ucb-gold);
   --md-typeset-a-color: #6fa8cc;
+
+  /* Material's slate code tokens sit just under 4.5:1 on the dark code
+     background (#272a35): numbers #e6695b (4.45) and constants #9383e2 (4.48). */
+  --md-code-hl-number-color: #f07a6e;
+  --md-code-hl-constant-color: #a394f0;
 }
 
 /* Footer copyright ("Made with Material for MkDocs"). Material's default is
@@ -166,7 +180,10 @@
   }
 }
 
-/* Responsive 16:9 wrapper for embedded tutorial videos. */
+/* Responsive 16:9 wrapper for tutorial videos. Uses a click-to-load
+   facade so YouTube's inaccessible player DOM is not injected until the
+   user chooses to play (avoids axe aria-prohibited-attr / button-name
+   failures inside the cross-origin iframe). */
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -174,14 +191,76 @@
   overflow: hidden;
   margin: 1.2em 0;
   border-radius: 0.2rem;
+  background: #000;
 }
 
-.video-wrapper iframe {
+.video-wrapper iframe,
+.video-wrapper .lite-youtube {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  border: 0;
+}
+
+.video-wrapper .lite-youtube {
+  display: block;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.video-wrapper .lite-youtube:focus-visible {
+  outline: 3px solid var(--ucb-gold);
+  outline-offset: -3px;
+}
+
+.video-wrapper .lite-youtube__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4.25rem;
+  height: 3rem;
+  margin: -1.5rem 0 0 -2.125rem;
+  border: 0;
+  border-radius: 0.75rem;
+  background: rgba(0, 0, 0, 0.7);
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.video-wrapper .lite-youtube:hover .lite-youtube__play,
+.video-wrapper .lite-youtube:focus-visible .lite-youtube__play {
+  background: var(--ucb-blue);
+  transform: scale(1.05);
+}
+
+.video-wrapper .lite-youtube__play::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -0.55rem 0 0 -0.25rem;
+  border-style: solid;
+  border-width: 0.55rem 0 0.55rem 0.95rem;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+.video-wrapper .lite-youtube__label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
   border: 0;
 }
 
@@ -519,11 +598,22 @@
   }
 }
 
-/* California Gold as the active/hover accent on navigation and the gold
-   underline Berkeley uses as a signature flourish. */
-.md-tabs__link--active,
-.md-nav__link--active {
-  color: var(--md-primary-bg-color);
+/* Top tabs sit on Berkeley Blue. Material defaults inactive tabs to white at
+   70% opacity; that composites to ~7:1 (passes), but some a11y scanners
+   mishandle opacity and flag `.md-tabs__link` (often the trailing Contact
+   tab). Use an opaque muted white instead, and a gold focus ring that meets
+   non-text contrast (3:1) against the blue bar. */
+.md-tabs__link {
+  opacity: 1;
+  color: #c5d4e0;
+  outline-color: var(--ucb-gold);
+}
+
+.md-tabs__item--active .md-tabs__link,
+.md-tabs__link:focus,
+.md-tabs__link:hover {
+  color: #ffffff;
+  opacity: 1;
 }
 
 .md-header {
@@ -693,15 +783,25 @@
   overflow: hidden;
 }
 
-.inspired-partner-list {
+/* The list is a real <ul> for screen readers; strip Material's typeset
+   list styling (bullets, indents, item margins). */
+.md-typeset .inspired-partner-list {
   flex: 1 1 auto;
   overflow-y: auto;
   min-height: 0;
   max-height: none;
+  margin: 0;
   padding: 0.45rem;
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
+  list-style: none;
+}
+
+.md-typeset .inspired-partner-list > li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .inspired-partner-item {
@@ -844,6 +944,62 @@
 .inspired-map-section .leaflet-div-icon {
   background: transparent !important;
   border: none !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Marker clusters: keep ≥24px hit area and readable count labels. */
+.inspired-map-section .marker-cluster {
+  background-clip: padding-box;
+}
+
+.inspired-map-section .marker-cluster div {
+  min-width: 24px;
+  min-height: 24px;
+  font: 600 0.75rem/24px inherit;
+  color: #ffffff;
+}
+
+.inspired-map-section .marker-cluster-small {
+  background-color: rgba(0, 50, 98, 0.45);
+}
+.inspired-map-section .marker-cluster-small div {
+  background-color: rgba(0, 50, 98, 0.9);
+}
+
+.inspired-map-section .marker-cluster-medium {
+  background-color: rgba(52, 113, 143, 0.45);
+}
+.inspired-map-section .marker-cluster-medium div {
+  background-color: rgba(52, 113, 143, 0.95);
+}
+
+.inspired-map-section .marker-cluster-large {
+  background-color: rgba(253, 181, 21, 0.45);
+}
+.inspired-map-section .marker-cluster-large div {
+  background-color: #c4820e;
+  color: #ffffff;
+}
+
+/* Sidebar nav links are only ~18px tall by default (line-height, no padding),
+   which fails WCAG 2.2 target-size (24×24). Expand the hit area without
+   changing Material's visual hierarchy much. */
+.md-nav__link {
+  min-height: 1.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  box-sizing: border-box;
+}
+
+/* Material sticks the active section header over the scrolled sidebar
+   (`.md-nav--lifted … position:sticky`), which obscures child link hit-areas
+   (axe target-size "partially obscured"). Keep headers in normal flow. */
+.md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link,
+.md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__container {
+  position: static;
+  box-shadow: none;
 }
 
 .inspired-map-section .leaflet-container {
