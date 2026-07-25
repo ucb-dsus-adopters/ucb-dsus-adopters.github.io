@@ -22,7 +22,9 @@ person. For common issues, see [Support](how-to-adopt/support.md) and the
 Program lead, outreach & overall direction
 { .team-role }
 
-[:fontawesome-brands-github:](https://github.com/ericvd-ucb){ aria-label="Eric Van Dusen on GitHub" } [:fontawesome-brands-linkedin:](https://www.linkedin.com/in/ericvd/){ aria-label="Eric Van Dusen on LinkedIn" } [:fontawesome-solid-envelope:](mailto:ericvd@berkeley.edu){ aria-label="Email Eric Van Dusen" }
+[:fontawesome-brands-github: Eric Van Dusen on GitHub](https://github.com/ericvd-ucb){ .team-social }
+[:fontawesome-brands-linkedin: Eric Van Dusen on LinkedIn](https://www.linkedin.com/in/ericvd/){ .team-social }
+[:fontawesome-solid-envelope: Email Eric Van Dusen](mailto:ericvd@berkeley.edu){ .team-social }
 </div>
 
 <div class="team-member" markdown>
@@ -33,7 +35,10 @@ Program lead, outreach & overall direction
 California Data Science outreach & promotion
 { .team-role }
 
-[:fontawesome-brands-github:](https://github.com/kseniyausovich){ aria-label="Kseniya Usovich on GitHub" } [:fontawesome-brands-linkedin:](https://www.linkedin.com/in/kseniya-usovich-45419a9b){ aria-label="Kseniya Usovich on LinkedIn" } [:material-web:](https://ca-datascience.github.io/){ aria-label="Kseniya Usovich's website" } [:fontawesome-solid-envelope:](mailto:k_usovich@berkeley.edu){ aria-label="Email Kseniya Usovich" }
+[:fontawesome-brands-github: Kseniya Usovich on GitHub](https://github.com/kseniyausovich){ .team-social }
+[:fontawesome-brands-linkedin: Kseniya Usovich on LinkedIn](https://www.linkedin.com/in/kseniya-usovich-45419a9b){ .team-social }
+[:material-web: Kseniya Usovich's website](https://ca-datascience.github.io/){ .team-social }
+[:fontawesome-solid-envelope: Email Kseniya Usovich](mailto:k_usovich@berkeley.edu){ .team-social }
 </div>
 
 <div class="team-member" markdown>
@@ -44,7 +49,9 @@ California Data Science outreach & promotion
 Adoption materials, tooling & autograder support
 { .team-role }
 
-[:fontawesome-brands-github:](https://github.com/jedwin3210){ aria-label="Edwin Vargas Navarro on GitHub" } [:fontawesome-brands-linkedin:](https://www.linkedin.com/in/edwin-vargas-navarro-423014237/){ aria-label="Edwin Vargas Navarro on LinkedIn" } [:fontawesome-solid-envelope:](mailto:jedwin321@berkeley.edu){ aria-label="Email Edwin Vargas Navarro" }
+[:fontawesome-brands-github: Edwin Vargas Navarro on GitHub](https://github.com/jedwin3210){ .team-social }
+[:fontawesome-brands-linkedin: Edwin Vargas Navarro on LinkedIn](https://www.linkedin.com/in/edwin-vargas-navarro-423014237/){ .team-social }
+[:fontawesome-solid-envelope: Email Edwin Vargas Navarro](mailto:jedwin321@berkeley.edu){ .team-social }
 </div>
 
 <div class="team-member" markdown>
@@ -55,7 +62,8 @@ Adoption materials, tooling & autograder support
 Adoption materials, hub setup & onboarding
 { .team-role }
 
-[:fontawesome-brands-github:](https://github.com/sean-morris){ aria-label="Sean Morris on GitHub" } [:fontawesome-solid-envelope:](mailto:sean.smorris@berkeley.edu){ aria-label="Email Sean Morris" }
+[:fontawesome-brands-github: Sean Morris on GitHub](https://github.com/sean-morris){ .team-social }
+[:fontawesome-solid-envelope: Email Sean Morris](mailto:sean.smorris@berkeley.edu){ .team-social }
 </div>
 
 </div>

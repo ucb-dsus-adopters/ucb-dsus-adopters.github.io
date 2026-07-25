@@ -700,6 +700,29 @@
   font-size: 1.35rem;
   margin: 0 0.3rem;
   color: var(--ucb-founders-rock-dark);
+  text-decoration: none;
+}
+
+/* Icon-only social links: keep real link text in the DOM for screen readers
+   / axe link-name, but clip it so only the twemoji icon shows visually. */
+.md-typeset .team-member a.team-social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.md-typeset .team-member a.team-social .twemoji {
+  flex: 0 0 auto;
+}
+
+.md-typeset .team-member a.team-social .twemoji svg {
+  width: 1.35rem;
+  height: 1.35rem;
 }
 
 /* Data 8 Inspired Curriculum explorer (list + Leaflet map) */
