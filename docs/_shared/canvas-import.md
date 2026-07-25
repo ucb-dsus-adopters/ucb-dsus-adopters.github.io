@@ -17,7 +17,10 @@ share the same internal IDs).
   JupyterHub URL. Click through to confirm the notebook loads correctly
 
 <div class="video-wrapper">
-<iframe src="https://www.youtube.com/embed/tsi-z_cf8Pc" title="Uploading the Canvas template" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<button type="button" class="lite-youtube" data-youtube-id="tsi-z_cf8Pc" data-title="Uploading the Canvas template" style="background-image: url('https://i.ytimg.com/vi/tsi-z_cf8Pc/hqdefault.jpg')">
+<span class="lite-youtube__play" aria-hidden="true"></span>
+<span class="lite-youtube__label">Play video: Uploading the Canvas template</span>
+</button>
 </div>
 
 !!! note "What's in the Canvas shell"

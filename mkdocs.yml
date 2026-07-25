@@ -46,7 +46,9 @@ extra_css:
   - stylesheets/extra.css
 
 extra_javascript:
+  - javascripts/a11y.js
   - javascripts/inspired-map.js
+  - javascripts/lite-youtube.js
 
 plugins:
   - search

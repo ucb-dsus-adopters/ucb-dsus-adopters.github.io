@@ -19,5 +19,8 @@
     the upstream Berkeley repo. A video walkthrough is below.
 
 <div class="video-wrapper">
-<iframe src="https://www.youtube.com/embed/xbvQF5HmwUw" title="JupyterHub rewriter walkthrough" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<button type="button" class="lite-youtube" data-youtube-id="xbvQF5HmwUw" data-title="JupyterHub rewriter walkthrough" style="background-image: url('https://i.ytimg.com/vi/xbvQF5HmwUw/hqdefault.jpg')">
+<span class="lite-youtube__play" aria-hidden="true"></span>
+<span class="lite-youtube__label">Play video: JupyterHub rewriter walkthrough</span>
+</button>
 </div>

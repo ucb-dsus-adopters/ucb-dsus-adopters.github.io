@@ -14,14 +14,14 @@ curriculum. Select a partner in the list to locate it on the map.
   <div class="inspired-toolbar">
     <label class="inspired-search">
       <span class="inspired-search-icon" aria-hidden="true"></span>
-      <input id="inspired-search-input" type="search" placeholder="Search institutions" autocomplete="off">
+      <input id="inspired-search-input" type="search" placeholder="Search institutions" aria-label="Search institutions" autocomplete="off">
     </label>
   </div>
 
   <div class="inspired-split">
     <div class="inspired-panel inspired-panel--list">
-      <div id="inspired-institution-list" class="inspired-partner-list" role="listbox" aria-label="Institutions with Data 8 inspired curriculum"></div>
-      <p id="inspired-list-footer" class="inspired-list-footer"></p>
+      <ul id="inspired-institution-list" class="inspired-partner-list" aria-label="Institutions with Data 8 inspired curriculum"></ul>
+      <p id="inspired-list-footer" class="inspired-list-footer" aria-live="polite"></p>
     </div>
     <div class="inspired-panel inspired-panel--map">
       <div class="inspired-map-block" id="inspired-map">

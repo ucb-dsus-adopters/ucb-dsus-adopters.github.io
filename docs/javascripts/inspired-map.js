@@ -7,6 +7,12 @@
     'sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=';
   var LEAFLET_INTEGRITY_JS =
     'sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=';
+  var CLUSTER_CSS =
+    'https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css';
+  var CLUSTER_DEFAULT_CSS =
+    'https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css';
+  var CLUSTER_JS =
+    'https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js';
 
   function escapeHtml(str) {
     return String(str)
@@ -20,18 +26,21 @@
     return escapeHtml(str).replace(/'/g, '&#39;');
   }
 
-  function loadStylesheet(href, integrity) {
+  function loadStylesheet(href, integrity, key) {
     return new Promise(function (resolve, reject) {
-      if (document.querySelector('link[data-inspired-leaflet="css"]')) {
+      var attr = key || href;
+      if (document.querySelector('link[data-inspired-asset="' + attr + '"]')) {
         resolve();
         return;
       }
       var link = document.createElement('link');
       link.rel = 'stylesheet';
       link.href = href;
-      link.integrity = integrity;
-      link.crossOrigin = '';
-      link.setAttribute('data-inspired-leaflet', 'css');
+      if (integrity) {
+        link.integrity = integrity;
+        link.crossOrigin = '';
+      }
+      link.setAttribute('data-inspired-asset', attr);
       link.onload = function () {
         resolve();
       };
@@ -40,14 +49,17 @@
     });
   }
 
-  function loadScript(src, integrity) {
+  function loadScript(src, integrity, key) {
     return new Promise(function (resolve, reject) {
-      if (typeof L !== 'undefined') {
-        resolve();
-        return;
-      }
-      var existing = document.querySelector('script[data-inspired-leaflet="js"]');
+      var attr = key || src;
+      var existing = document.querySelector(
+        'script[data-inspired-asset="' + attr + '"]'
+      );
       if (existing) {
+        if (existing.getAttribute('data-loaded') === '1') {
+          resolve();
+          return;
+        }
         existing.addEventListener('load', function () {
           resolve();
         });
@@ -56,10 +68,13 @@
       }
       var script = document.createElement('script');
       script.src = src;
-      script.integrity = integrity;
-      script.crossOrigin = '';
-      script.setAttribute('data-inspired-leaflet', 'js');
+      if (integrity) {
+        script.integrity = integrity;
+        script.crossOrigin = '';
+      }
+      script.setAttribute('data-inspired-asset', attr);
       script.onload = function () {
+        script.setAttribute('data-loaded', '1');
         resolve();
       };
       script.onerror = reject;
@@ -134,13 +149,16 @@
       meta +
       '<a class="inspired-map-popup-link" href="' +
       escapeAttr(siteUrl) +
-      '" target="_blank" rel="noopener">Visit website</a>' +
+      '" target="_blank" rel="noopener" aria-label="Visit ' +
+      escapeAttr(institution.name) +
+      ' website (opens in a new tab)">Visit website</a>' +
       '</div>'
     );
   }
 
   function createDotIcon(active) {
-    var size = active ? 16 : 14;
+    // Hit area must be ≥24×24 for WCAG 2.2 target-size; the visible dot stays smaller.
+    var hit = 24;
     var dot = active ? 12 : 10;
     var fill = active ? '#FDB515' : '#003262';
     return L.divIcon({
@@ -151,12 +169,12 @@
         dot +
         'px;height:' +
         dot +
-        'px;background:' +
+        'px;margin:auto;background:' +
         fill +
         ';border:2px solid #fff;border-radius:50%;box-shadow:0 1px 4px rgba(0,0,0,.35);" aria-hidden="true"></span>',
-      iconSize: [size, size],
-      iconAnchor: [size / 2, size / 2],
-      popupAnchor: [0, -(size / 2) - 4],
+      iconSize: [hit, hit],
+      iconAnchor: [hit / 2, hit / 2],
+      popupAnchor: [0, -(hit / 2) - 4],
     });
   }
 
@@ -166,20 +184,26 @@
     if (!canvas || !listEl) return;
 
     Promise.all([
-      loadStylesheet(LEAFLET_CSS, LEAFLET_INTEGRITY_CSS),
-      loadScript(LEAFLET_JS, LEAFLET_INTEGRITY_JS),
+      loadStylesheet(LEAFLET_CSS, LEAFLET_INTEGRITY_CSS, 'leaflet-css'),
+      loadScript(LEAFLET_JS, LEAFLET_INTEGRITY_JS, 'leaflet-js'),
       fetch(dataUrl()).then(function (response) {
         if (!response.ok) throw new Error('Failed to load institutions');
         return response.json();
       }),
     ])
       .then(function (results) {
-        initExplorer(results[2]);
+        return Promise.all([
+          loadStylesheet(CLUSTER_CSS, null, 'cluster-css'),
+          loadStylesheet(CLUSTER_DEFAULT_CSS, null, 'cluster-default-css'),
+          loadScript(CLUSTER_JS, null, 'cluster-js'),
+        ]).then(function () {
+          initExplorer(results[2]);
+        });
       })
       .catch(function (err) {
         console.error(err);
         listEl.innerHTML =
-          '<p class="inspired-map-error">Unable to load the institution map. Please refresh the page.</p>';
+          '<li class="inspired-map-error">Unable to load the institution map. Please refresh the page.</li>';
       });
   }
 
@@ -190,6 +214,7 @@
     var query = '';
     var map = null;
     var tileLayer = null;
+    var clusterGroup = null;
 
     institutions
       .slice()
@@ -258,7 +283,11 @@
       document.querySelectorAll('.inspired-partner-item').forEach(function (el) {
         var on = el.getAttribute('data-institution-id') === id;
         el.classList.toggle('inspired-partner-item--active', on);
-        el.setAttribute('aria-selected', on ? 'true' : 'false');
+        if (on) {
+          el.setAttribute('aria-current', 'true');
+        } else {
+          el.removeAttribute('aria-current');
+        }
       });
       Object.keys(markersById).forEach(function (markerId) {
         markersById[markerId].setIcon(createDotIcon(markerId === id));
@@ -287,15 +316,25 @@
     }
 
     function centerOnMarker(marker, thenOpenPopup) {
+      function afterVisible() {
+        if (!thenOpenPopup) return;
+        positionMarkerInMapFrame(marker, function () {
+          marker.openPopup();
+        });
+      }
+
+      // Zoom/spiderfy through clusters so the marker is an unobscured 24×24 target.
+      if (clusterGroup && typeof clusterGroup.zoomToShowLayer === 'function') {
+        clusterGroup.zoomToShowLayer(marker, afterVisible);
+        return;
+      }
+
       var latlng = marker.getLatLng();
       var zoom = Math.max(map.getZoom(), 5);
       map.flyTo(latlng, zoom, { animate: true, duration: 0.55 });
       map.once('moveend', function onFlyEnd() {
         map.off('moveend', onFlyEnd);
-        if (!thenOpenPopup) return;
-        positionMarkerInMapFrame(marker, function () {
-          marker.openPopup();
-        });
+        afterVisible();
       });
     }
 
@@ -316,6 +355,15 @@
 
       if (options.fly !== false) {
         centerOnMarker(marker, true);
+      } else if (
+        clusterGroup &&
+        typeof clusterGroup.zoomToShowLayer === 'function'
+      ) {
+        clusterGroup.zoomToShowLayer(marker, function () {
+          positionMarkerInMapFrame(marker, function () {
+            marker.openPopup();
+          });
+        });
       } else {
         positionMarkerInMapFrame(marker, function () {
           marker.openPopup();
@@ -330,18 +378,17 @@
 
       if (!visible.length) {
         listEl.innerHTML =
-          '<p class="inspired-map-error">No institutions match your search.</p>';
+          '<li class="inspired-map-error">No institutions match your search.</li>';
         updateFooter(0);
         return;
       }
 
       visible.forEach(function (institution) {
+        var item = document.createElement('li');
         var button = document.createElement('button');
         button.type = 'button';
         button.className = 'inspired-partner-item';
-        button.setAttribute('role', 'option');
         button.setAttribute('data-institution-id', institution.id);
-        button.setAttribute('aria-selected', 'false');
         button.title = institution.name + ' — show on map';
 
         var avatar = document.createElement('span');
@@ -386,7 +433,8 @@
           openInstitution(institution.id, { fly: true });
         });
 
-        listEl.appendChild(button);
+        item.appendChild(button);
+        listEl.appendChild(item);
       });
 
       if (activeId) setActiveStyles(activeId);
@@ -414,10 +462,21 @@
     );
     map.fitBounds(bounds, { padding: [36, 36], maxZoom: 4 });
 
+    // Cluster overlapping pins so each visible target stays ≥24×24 (WCAG 2.2).
+    clusterGroup = L.markerClusterGroup({
+      showCoverageOnHover: false,
+      maxClusterRadius: 48,
+      spiderfyOnMaxZoom: true,
+      zoomToBoundsOnClick: true,
+    });
+
     institutions.forEach(function (institution) {
+      // `title` gives the keyboard-focusable marker an accessible name and
+      // persists through setIcon() when the active dot style is swapped.
       var marker = L.marker([institution.lat, institution.lng], {
         icon: createDotIcon(false),
-      }).addTo(map);
+        title: institution.name,
+      });
 
       marker.bindPopup(popupHtml(institution), {
         className: 'inspired-map-leaflet-popup',
@@ -432,7 +491,10 @@
       });
 
       markersById[institution.id] = marker;
+      clusterGroup.addLayer(marker);
     });
+
+    map.addLayer(clusterGroup);
 
     var search = document.getElementById('inspired-search-input');
     if (search) {
