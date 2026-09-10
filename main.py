@@ -57,7 +57,7 @@ COURSES = {
         "solutions_repo": "https://github.com/ucb-dsus-adopters/data-6-materials-solutions",
         "solutions_repo_name": "ucb-dsus-adopters/data-6-materials-solutions",
         "interest_form": "https://forms.gle/2nNtbfgBtNsUHypCA",
-        "canvas_template": "https://drive.google.com/file/d/1lt5DsJRwBF78YzEOax7jOfl3gZNav9qP/view?usp=sharing",
+        "canvas_template": "https://drive.google.com/file/d/1zPnRvNlkeQueDvYWVoOtPxAKlxXqRdeK/view?usp=sharing",
         "xeus_lite": "https://dubois-ctds.github.io/data6-xeus-lite/",
         "otter_version": "6.1.6",
     },
