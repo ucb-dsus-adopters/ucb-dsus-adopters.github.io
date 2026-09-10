@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   var MARKER_TARGET_X = 0.5;
   var MARKER_TARGET_Y = 0.72;
   var LEAFLET_CSS = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
@@ -157,7 +157,7 @@
   }
 
   function createDotIcon(active) {
-    // Hit area must be ≥24×24 for WCAG 2.2 target-size; the visible dot stays smaller.
+    // Hit area must be â‰¥24Ã—24 for WCAG 2.2 target-size; the visible dot stays smaller.
     var hit = 24;
     var dot = active ? 12 : 10;
     var fill = active ? '#FDB515' : '#003262';
@@ -214,6 +214,7 @@
     var query = '';
     var map = null;
     var tileLayer = null;
+    var tileLabelsLayer = null;
     var clusterGroup = null;
 
     institutions
@@ -236,10 +237,25 @@
       );
     }
 
+    // Esri ArcGIS Canvas tiles (no API key), same approach as cal-icor/homepage.
     function tileUrl() {
-      return isDark()
-        ? 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
-        : 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
+      var style = isDark() ? 'World_Dark_Gray_Base' : 'World_Light_Gray_Base';
+      return (
+        'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/' +
+        style +
+        '/MapServer/tile/{z}/{y}/{x}'
+      );
+    }
+
+    function tileLabelsUrl() {
+      var style = isDark()
+        ? 'World_Dark_Gray_Reference'
+        : 'World_Light_Gray_Reference';
+      return (
+        'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/' +
+        style +
+        '/MapServer/tile/{z}/{y}/{x}'
+      );
     }
 
     function matchesQuery(institution) {
@@ -266,7 +282,7 @@
         footer.textContent =
           visibleCount + ' of ' + institutions.length + ' shown';
       } else {
-        footer.textContent = visibleCount + ' partners · scroll for more';
+        footer.textContent = visibleCount + ' partners Â· scroll for more';
       }
     }
 
@@ -323,7 +339,7 @@
         });
       }
 
-      // Zoom/spiderfy through clusters so the marker is an unobscured 24×24 target.
+      // Zoom/spiderfy through clusters so the marker is an unobscured 24Ã—24 target.
       if (clusterGroup && typeof clusterGroup.zoomToShowLayer === 'function') {
         clusterGroup.zoomToShowLayer(marker, afterVisible);
         return;
@@ -389,7 +405,7 @@
         button.type = 'button';
         button.className = 'inspired-partner-item';
         button.setAttribute('data-institution-id', institution.id);
-        button.title = institution.name + ' — show on map';
+        button.title = institution.name + ' â€” show on map';
 
         var avatar = document.createElement('span');
         avatar.className = 'inspired-partner-avatar';
@@ -422,7 +438,7 @@
         meta.className = 'inspired-partner-meta';
         meta.textContent = [institution.location, institution.type]
           .filter(Boolean)
-          .join(' · ');
+          .join(' Â· ');
 
         body.appendChild(name);
         body.appendChild(meta);
@@ -451,8 +467,13 @@
     });
 
     tileLayer = L.tileLayer(tileUrl(), {
-      subdomains: 'abcd',
-      maxZoom: 19,
+      attribution: '',
+      maxZoom: 16,
+    }).addTo(map);
+
+    tileLabelsLayer = L.tileLayer(tileLabelsUrl(), {
+      attribution: '',
+      maxZoom: 16,
     }).addTo(map);
 
     var bounds = L.latLngBounds(
@@ -462,7 +483,7 @@
     );
     map.fitBounds(bounds, { padding: [36, 36], maxZoom: 4 });
 
-    // Cluster overlapping pins so each visible target stays ≥24×24 (WCAG 2.2).
+    // Cluster overlapping pins so each visible target stays â‰¥24Ã—24 (WCAG 2.2).
     clusterGroup = L.markerClusterGroup({
       showCoverageOnHover: false,
       maxClusterRadius: 48,
@@ -508,6 +529,7 @@
 
     var themeObserver = new MutationObserver(function () {
       tileLayer.setUrl(tileUrl());
+      tileLabelsLayer.setUrl(tileLabelsUrl());
     });
     themeObserver.observe(document.body, {
       attributes: true,
@@ -534,3 +556,4 @@
     boot();
   }
 })();
+
