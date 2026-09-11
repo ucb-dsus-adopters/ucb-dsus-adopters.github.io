@@ -482,25 +482,36 @@
   border-color: var(--md-primary-fg-color);
 }
 
+/* Two-column grid: inputs share the first row and descriptions the second, so the two
+   file pickers stay level no matter how long a label or description gets. */
 .otter-grader .grader-row {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 1rem;
 }
 
 .otter-grader .grader-col {
-  flex: 1;
-  min-width: 220px;
-  display: flex;
-  flex-direction: column;
+  display: contents;
 }
 
-/* Keep the two file inputs on one line even when a label wraps. */
 .otter-grader .grader-col > label {
-  flex: 1;
+  grid-row: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.otter-grader .grader-col > .grader-meta {
+  grid-row: 2;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .otter-grader .grader-row {
+    display: block;
+  }
+  .otter-grader .grader-col {
+    display: block;
+  }
 }
 
 .otter-grader .grader-meta {

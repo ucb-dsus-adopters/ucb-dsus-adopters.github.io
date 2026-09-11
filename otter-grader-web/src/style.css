@@ -34,9 +34,11 @@ code { background: var(--code-bg); padding: 0.1em 0.3em; border-radius: 3px; }
 .otter-grader legend { font-weight: 700; padding: 0 0.4rem; }
 .otter-grader label { display: block; font-weight: 600; margin-bottom: 0.4rem; font-size: 0.9rem; }
 .otter-grader input[type="file"], .otter-grader input[type="text"], .otter-grader input[type="number"], .otter-grader textarea { display: block; width: 100%; box-sizing: border-box; margin-top: 0.3rem; padding: 0.5rem 0.6rem; border: 1px solid var(--border); border-radius: 4px; background: var(--input-bg); color: var(--text); font: inherit; font-weight: 400; }
-.otter-grader .grader-row { display: flex; gap: 1rem; flex-wrap: wrap; }
-.otter-grader .grader-col { flex: 1; min-width: 240px; display: flex; flex-direction: column; }
-.otter-grader .grader-col > label { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; }
+.otter-grader .grader-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1rem; }
+.otter-grader .grader-col { display: contents; }
+.otter-grader .grader-col > label { grid-row: 1; display: flex; flex-direction: column; justify-content: flex-end; }
+.otter-grader .grader-col > .grader-meta { grid-row: 2; }
+@media (max-width: 720px) { .otter-grader .grader-row, .otter-grader .grader-col { display: block; } }
 .otter-grader .grader-meta { margin: 0.3rem 0 0.8rem; font-size: 0.85rem; color: var(--text-muted); }
 .otter-grader .grader-meta-error { color: var(--danger); }
 .otter-grader .grader-actions { margin: 0.75rem 0; }
