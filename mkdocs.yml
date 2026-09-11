@@ -142,5 +142,8 @@ nav:
       - FAQ: resources/faq.md
       - Glossary: resources/glossary.md
       - Changelog: resources/changelog.md
-  - Canvas Rewriter: tools/canvas-rewriter.md
+  - Tools:
+      - Overview: tools/index.md
+      - Canvas Rewriter: tools/canvas-rewriter.md
+      - Otter Service In-Browser: tools/otter-grader.md
   - Contact: contact.md

@@ -427,6 +427,248 @@
   to { transform: rotate(360deg); }
 }
 
+/* Inline Otter grader on the tools page. Mirrors the .canvas-rewriter block above so both
+   tools look alike; every color comes from Material variables for light/dark parity. */
+.otter-grader {
+  position: relative;
+  margin: 1.5em 0 2.5em;
+  padding: 1.5rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.2rem;
+  background: var(--md-default-bg-color);
+}
+
+.otter-grader fieldset.grader-batch {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.2rem;
+  padding: 0.75rem 1rem 0.5rem;
+  margin: 0 0 1rem;
+  min-width: 0;
+}
+
+.otter-grader legend {
+  font-weight: 700;
+  padding: 0 0.4rem;
+}
+
+.otter-grader label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.otter-grader input[type="file"],
+.otter-grader input[type="text"],
+.otter-grader input[type="number"],
+.otter-grader textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0.3rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.2rem;
+  font: inherit;
+  font-weight: 400;
+  font-size: 0.9rem;
+  background: var(--md-code-bg-color);
+  color: var(--md-default-fg-color);
+}
+
+.otter-grader input:focus,
+.otter-grader textarea:focus {
+  outline: none;
+  border-color: var(--md-primary-fg-color);
+}
+
+.otter-grader .grader-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.otter-grader .grader-col {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Keep the two file inputs on one line even when a label wraps. */
+.otter-grader .grader-col > label {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.otter-grader .grader-meta {
+  margin: 0.3rem 0 0.8rem;
+  font-size: 0.8rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* Error text: #b3261e on the light background is 6.2:1; #ff8a80 on slate is above 7:1. */
+.otter-grader .grader-meta-error,
+.otter-grader tr.grader-row-failed td {
+  color: #b3261e;
+}
+
+[data-md-color-scheme="slate"] .otter-grader .grader-meta-error,
+[data-md-color-scheme="slate"] .otter-grader tr.grader-row-failed td {
+  color: #ff8a80;
+}
+
+.otter-grader .grader-actions {
+  margin: 0.75rem 0;
+}
+
+.otter-grader button {
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.otter-grader button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.otter-grader button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.otter-grader .btn-secondary {
+  background: transparent;
+  color: var(--md-default-fg-color);
+  border: 1px solid var(--md-default-fg-color--lighter);
+}
+
+.otter-grader .btn-small {
+  font-size: 0.8rem;
+  padding: 0.35rem 0.7rem;
+}
+
+.otter-grader details.grader-advanced {
+  margin: 0.5rem 0 1rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px dashed var(--md-default-fg-color--lighter);
+  border-radius: 0.2rem;
+}
+
+.otter-grader details.grader-advanced summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.otter-grader .grader-status {
+  margin: 1rem 0;
+}
+
+.otter-grader progress {
+  width: 100%;
+  height: 0.7rem;
+  accent-color: var(--md-primary-fg-color);
+}
+
+.otter-grader .grader-status p {
+  margin: 0.4rem 0 0;
+  font-size: 0.85rem;
+}
+
+.otter-grader .grader-result {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.otter-grader .grader-result h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.otter-grader .grader-summary {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.otter-grader .grader-table-wrap {
+  overflow-x: auto;
+  margin-bottom: 0.75rem;
+}
+
+.otter-grader table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.otter-grader th,
+.otter-grader td {
+  text-align: left;
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  vertical-align: top;
+}
+
+.otter-grader td details summary,
+.otter-grader .grader-warnings summary {
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+.otter-grader td pre,
+.otter-grader .grader-warnings ul {
+  font-size: 0.75rem;
+  background: var(--md-code-bg-color);
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  overflow-x: auto;
+  margin: 0.3rem 0 0;
+  white-space: pre-wrap;
+}
+
+.otter-grader #loading-overlay {
+  position: absolute;
+  inset: 0;
+  background: color-mix(in srgb, var(--md-default-bg-color) 85%, transparent);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  border-radius: 0.2rem;
+  backdrop-filter: blur(2px);
+}
+
+.otter-grader #loading-overlay[hidden] {
+  display: none;
+}
+
+.otter-grader .loading-spinner {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 3px solid var(--md-primary-fg-color);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: grader-spin 1s linear infinite;
+  margin-bottom: 0.75rem;
+}
+
+@keyframes grader-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 /* Course logos used inside the home/course grid cards, floating left so
    wrapped text stays beside the logo instead of dropping below it. */
 .md-typeset .grid.cards img.card-logo {

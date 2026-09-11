@@ -3,6 +3,13 @@
 The Otter Service Standalone is a web-based service for grading notebooks, with no local
 installation required. The service is available at [{{ grader_url }}]({{ grader_url }}).
 
+!!! tip "In-browser version"
+
+    [Otter Service In-Browser]({{ grader_web_url }}) runs the same grading entirely in your
+    browser. Upload the `autograder.zip` from Step 3 and your submissions from Step 2, and
+    the grades CSV downloads directly, with no authorization or download code. The hosted
+    service and the steps below remain available.
+
 :material-play-circle: [Screen recording: grading walkthrough (5 min)](https://drive.google.com/file/d/1-r1kuUutn7ZXl3lSUgBbZAxLFuHoeFPp/view)
 
 **Step 1: Authorization.** To access the service, we add your GitHub username to our

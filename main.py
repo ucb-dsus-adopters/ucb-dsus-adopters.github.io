@@ -26,6 +26,7 @@ COMMON = {
     "support_email": "ds-help@berkeley.edu",
     "grader_url": "https://grader.datahub.berkeley.edu/",
     "rewriter_url": "https://ucb-dsus-adopters.github.io/tools/canvas-rewriter/",
+    "grader_web_url": "https://ucb-dsus-adopters.github.io/tools/otter-grader/",
     "otter_org_url": "https://github.com/orgs/otter-service-stdalone",
     "default_hub": "datahub.berkeley.edu",
 }
@@ -94,12 +95,26 @@ def define_env(env):
         env.variables[key] = value
 
 
+# Browser tools built with Vite. Each entry maps a sub-project's dist/ directory to the
+# folder under site/assets/ that its docs page loads scripts from.
+BROWSER_TOOLS = {
+    "canvas-jupyterhub-rewriter": "canvas-rewriter",
+    "otter-grader-web": "otter-grader",
+}
+
+
 def on_post_build(env):
-    """Copy the built Canvas JupyterHub rewriter script into the site output."""
-    dist = Path(__file__).resolve().parent / "canvas-jupyterhub-rewriter" / "dist"
-    bundle = dist / "rewriter.js"
-    if not bundle.is_file():
-        return
-    target_dir = Path(env.conf["site_dir"]) / "assets" / "canvas-rewriter"
-    target_dir.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(bundle, target_dir / "rewriter.js")
+    """Copy the built browser tools (Canvas rewriter, Otter grader) into the site output.
+
+    Silently skips a tool whose dist/ is missing so ``mkdocs serve`` works without npm.
+    """
+    root = Path(__file__).resolve().parent
+    for project, asset_dir in BROWSER_TOOLS.items():
+        dist = root / project / "dist"
+        if not dist.is_dir():
+            continue
+        target_dir = Path(env.conf["site_dir"]) / "assets" / asset_dir
+        target_dir.mkdir(parents=True, exist_ok=True)
+        for bundle in dist.iterdir():
+            if bundle.is_file():
+                shutil.copy2(bundle, target_dir / bundle.name)

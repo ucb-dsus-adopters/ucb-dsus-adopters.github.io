@@ -6,3 +6,8 @@ __pycache__/
 
 canvas-jupyterhub-rewriter/node_modules/
 canvas-jupyterhub-rewriter/dist/
+
+otter-grader-web/node_modules/
+otter-grader-web/dist/
+
+.DS_Store

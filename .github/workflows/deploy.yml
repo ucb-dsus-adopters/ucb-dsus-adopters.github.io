@@ -29,5 +29,10 @@ jobs:
           cd canvas-jupyterhub-rewriter
           npm ci
           npm run build
+      - name: Build Otter grader
+        run: |
+          cd otter-grader-web
+          npm ci
+          npm run build
       - name: Build and publish
         run: mkdocs gh-deploy --force --strict

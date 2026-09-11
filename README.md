@@ -9,8 +9,9 @@ infrastructure developed by UC Berkeley and partner institutions. Built with
 ```bash
 pip install -r requirements.txt
 
-# Build the embedded Canvas JupyterHub rewriter (required for the Canvas Rewriter tab)
+# Build the embedded browser tools (required for the Tools tab)
 cd canvas-jupyterhub-rewriter && npm ci && npm run build && cd ..
+cd otter-grader-web && npm ci && npm run build && cd ..
 
 mkdocs serve          # live preview at http://127.0.0.1:8000
 mkdocs build --strict # fail on broken links / missing includes
@@ -25,6 +26,9 @@ mkdocs build --strict # fail on broken links / missing includes
   ([ds-modules/canvas-jupyterhub-rewriter](https://github.com/ds-modules/canvas-jupyterhub-rewriter)).
   Built during deploy; the script is copied into the site output via `main.py` and loaded
   directly on the Canvas Rewriter page.
+- `otter-grader-web/`: source for Otter Service In-Browser (Pyodide + otter-grader
+  running in a Web Worker). Built during deploy like the rewriter; `npm test` covers the
+  pure modules and `otter-grader-web/README.md` describes the design.
 - `main.py`: `mkdocs-macros` module defining per-course variables (repos, hub, otter
   version, interest form) that drive the shared blocks.
 - Licensing is **per-course**, stated directly on each course page, never shared.
