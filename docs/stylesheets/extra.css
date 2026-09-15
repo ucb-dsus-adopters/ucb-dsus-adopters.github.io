@@ -71,7 +71,8 @@
 }
 
 .md-typeset .grid.cards a,
-.md-typeset .team-member a {
+.md-typeset .team-member a,
+.md-typeset p a.team-social {
   text-decoration: none;
 }
 
@@ -950,32 +951,42 @@
 }
 
 .md-typeset .team-member a {
-  font-size: 1.35rem;
   margin: 0 0.3rem;
   color: var(--ucb-founders-rock-dark);
   text-decoration: none;
 }
 
 /* Icon-only social links: keep real link text in the DOM for screen readers
-   / axe link-name, but clip it so only the twemoji icon shows visually. */
-.md-typeset .team-member a.team-social {
+   / axe link-name, but hide it visually so only the twemoji icon shows.
+   font-size:0 collapses text nodes; overflow:hidden alone leaked underlined
+   letter fragments (the p>a underline rule beat .team-member a on specificity). */
+.md-typeset .team-member a.team-social,
+.md-typeset p a.team-social {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.75rem;
+  height: 1.75rem;
   overflow: hidden;
   white-space: nowrap;
   vertical-align: middle;
+  font-size: 0;
+  line-height: 0;
+  text-decoration: none;
 }
 
-.md-typeset .team-member a.team-social .twemoji {
+.md-typeset .team-member a.team-social .twemoji,
+.md-typeset p a.team-social .twemoji {
   flex: 0 0 auto;
+  font-size: 1.35rem;
+  line-height: 1;
 }
 
-.md-typeset .team-member a.team-social .twemoji svg {
+.md-typeset .team-member a.team-social .twemoji svg,
+.md-typeset p a.team-social .twemoji svg {
   width: 1.35rem;
   height: 1.35rem;
+  display: block;
 }
 
 /* Data 8 Inspired Curriculum explorer (list + Leaflet map) */
