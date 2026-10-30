@@ -43,7 +43,6 @@ COURSES = {
         "solutions_repo_name": "ucb-dsus-adopters/materials-fds-private-v2",
         "interest_form": "https://docs.google.com/forms/d/e/1FAIpQLSdvwtCh3Pog_vWhYOxlvcVLw6mBp6-tetZmLm4vAMGU0hHmkw/viewform",
         "canvas_template": "https://drive.google.com/file/d/1jH1yWJPhiGQC7iueIrdMl9EkKLOB-3Oh/view?usp=sharing",
-        "jupytutor_url": "https://github.com/team-jupytutor/jupytutor",
         "version_changes_pdf": "https://github.com/ucb-dsus-adopters/materials-fds-private-v2/blob/main/data8_sp22_vs_sp26_changes.pdf",
         # Browser-based course calendar (xeus-lite): slides, worksheets, videos.
         "xeus_lite": "http://data8.org/materials-fds-xeus-lite/",

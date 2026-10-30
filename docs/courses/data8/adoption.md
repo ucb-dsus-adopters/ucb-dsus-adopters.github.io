@@ -36,7 +36,6 @@ and Canvas template you use.
 | --- | --- | --- |
 | **Materials repo** | [materials-fds](https://github.com/data-8/materials-fds) | [materials-fds-v2](https://github.com/ucb-dsus-adopters/materials-fds-v2) |
 | **Basis** | Spring 2022 | Spring 2026 |
-| **Notable features** | Classic Data 8 sequence | [Jupytutor]({{ c.jupytutor_url }}) integrated |
 | **Canvas shell** | Original template | UI + accessibility improvements |
 
 See [Spring 2022 vs Spring 2026 changes (PDF)]({{ c.version_changes_pdf }}) for a full
